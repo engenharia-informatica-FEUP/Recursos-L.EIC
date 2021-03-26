@@ -3,7 +3,7 @@
  - Aqui podes encontrar todos os recursos para o L.EIC (Licenciatura em Engenharia Informática e Computação) da FEUP.
  - Manuais, exames, exercícios, descrições informais, entre outros.
  - Este repositório é contributo de muitos estudantes e pretendo apenas ter aqui um meio de acesso fácil aos vários recursos. 
- - Ver [aqui](plano%20de%20estudos.png) plano de estudos separado por áreas.
+ - [Ver aqui plano de estudos separado por áreas.](plano%20de%20estudos.png)
 
 <table>
     <tr>
@@ -124,16 +124,3 @@
         <td><a href="">Computação Paralela e Distribuída</a></td>
     </tr>
 </table>
-
-## Extras
-* [Configurar VPN - Instruções](https://www.up.pt/it/pt/servicos/redes-e-conetividade/vpn-eca13b99)
-* [Como configurar VPN da FEUP em Windows (versão rápida)](https://www.youtube.com/watch?v=pzngYxsTz3g)
-* [Markdown Guide](https://www.markdownguide.org/)
-* [VirtualBox tutorials](https://www.youtube.com/playlist?list=PLrpSjHQj3tT4DkBq5BEez99C1Oz0fLDSv): como instalar VirtualBox e Ubuntu, como criar uma pasta partilhada entre windows host e ubuntu guest, etc.
-
-## Contribui também!
- - Encontraste algum erro? Falta adicionar mais algum recurso ou informação? Queres contribuir com as tuas resoluções e projectos?
- - Dá por favor a tua opinião e/ou o teu contributo usando uma das seguintes opções: 
-     - Fazer um pull request ou um issue.
-     - Mandar um e-mail para mieic.feup.repository@gmail.com (se preferes contribuir anonimamente)
- - Farei as alterações necessárias.

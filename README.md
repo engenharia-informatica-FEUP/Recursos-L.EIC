@@ -121,6 +121,6 @@
         <td></td>
         <td><a href="">Redes de Computadores</a></td>
         <td></td>
-        <td><a href="">Computação Paralela e Distribuída</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/tree/main/3%C2%BA%20ano/2%C2%BA%20semestre/Computa%C3%A7%C3%A3o%20paralela%20e%20distribu%C3%ADda">Computação Paralela e Distribuída</a></td>
     </tr>
 </table>

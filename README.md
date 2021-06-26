@@ -55,7 +55,7 @@
     </tr> 
     <tr>
         <td></td>
-        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/tree/main/2%C2%BA%20ano/1%C2%BA%20semestre/F%C3%ADsica%20II">Física II</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/2%C2%BA%20ano/1%C2%BA%20semestre/F%C3%ADsica%20II/README.md">Física II</a></td>
         <td></td>
         <td><a href="">Métodos Estatísticos</a></td>
     </tr>

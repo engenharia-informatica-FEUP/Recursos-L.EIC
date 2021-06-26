@@ -2,6 +2,5 @@
 
 ## Recursos
 * [Ficha da UC]()
-
-* [Ver cadeira correspondente com o plano de estudos antigo](https://github.com/engenharia-informatica-FEUP/Recursos-MIEIC/blob/master/3%C2%BA%20ano/2%C2%BA%20semestre/SDIS%20-%20Sistemas%20Distribu%C3%ADdos/README.md)
+* [Apontamentos](https://drive.google.com/drive/u/2/folders/1q4CokoryA0eY6rBbG47Y-EBMdHxxwz04)
 

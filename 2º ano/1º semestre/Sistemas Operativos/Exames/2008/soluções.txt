@@ -1,0 +1,170 @@
+08.01.21 - Solução
+
+1.
+
+O algoritmo de escalonamento a usar num sistema operativo poderia depender do 
+tipo de processos que se espera que ele tenha de controlar. 
+Para cada um dos tipos de sistemas de computação (A, B e C) abaixo descritos, 
+diga qual (quais) dos algoritmos de escalonamento a seguir indicados seria(m) 
+mais apropriados: 
+ - First-Come-First-Served, 
+ - Shortest-Job-First 
+ - Priority 
+ - Round-Robin 
+ - Multilevel-Feedback-Queue. 
+ No caso de algum destes algoritmos poder ser executado com ou sem preempção, 
+ diga qual das duas versões escolheria. Justifique as suas respostas.
+• A- sistema partilhado, cujos utilizadores executam, essencialmente, 
+  edição de texto e pesquisas na Web; 
+
+R: 
+FCFS não é adequado para sistemas de time sharing, que é o caso.
+Shortest job first pode ser utilizado em qualquer das variantes (preemptivo ou nao
+preemptivo). O grande overhead e a possibilidade de inanição não são problemas de
+maior num sistema destinado a edição de texto e web.
+Priority pode ser utilizado em qualquer das variantes (preemptivo ou não preemptivo), 
+a inanição não é problema de maior tendo em conta o uso que o sistema tem e pode 
+ser prevenida aumentando a prioridade dos processos à medida que envelhecem.
+Round robin pode ser usado, mas na sua variante virtual; edição de texto e pesquisa
+na web são usos que fazem muito I/O e o Round Robin "normal" penaliza processos
+IO-bound.
+MLFQ pode ser utilizada visto dar preferencia a jobs curtos e a processos I/O bound
+em sistemas timesharing.
+
+• B- sistema de controlo de tráfego aéreo onde são executados múltiplos processos 
+  que fazem o seguimento e o controlo da rota de aviões, precavendo situações 
+  de colisão;
+
+R:
+Para este sistema existem duas prioridades:
+ - Risco reduzido de inanição
+ - Tempo de espera curto
+ 
+FCFS tem um tempo médio de espera elevado, apesar de não existirem probs. de inanição
+SJF/SRTF implica possibilidade de inanição.
+Priority scheduling com aumento gradual da prioridade com o envelhecimento pode ser usado.
+Round Robin pode ser usado, favorece processos CPU bound e não implica perigo de inanição
+MLFQ pode ser utilizado, a maioria dos processos são CPU bound (logo não há
+problemas com o favorecimento de processos I/O bound). Para além disso, a movimentação
+entre filas previne a inanição.
+• C- sistema de processamento em batch, em que se pretende minimizar o tempo médio 
+  de espera dos jobs.
+
+R:
+Como o mínimo tempo de espera possível é prioridade, recomenda-se SJF.
+
+2. Considere a seguinte tentativa de implementa-
+ção das operações wait() e signal() sobre semáforos. 
+a)
+a.1)
+Qual o objectivo das chamadas 
+disable_interrupts() e enable_interrupts()?
+R: é para prevenir o acesso concorrente aos dados do semáforo.
+a.2) Qual o(s) problema(s) que há em implementar 
+estas operações recorrendo à inibição de interrupções ?
+
+R: Assumindo que os interrupts são desactivados "system-wide", isto é 
+extremamente perigoso, não se deve fazer a nível do utilizador.
+Inibir as interrupções, impede o scheduling de outros processos e a execução
+de operações que podem ser vitais à estabilidade do sistema.
+Para além disto, num sistema multiprocessador, a inibição de interrupções nem sequer 
+previne o acesso simultaneo aos dados do semaforo.
+a.3) Isto é um spinlock, não um semaforo - faz busy-wait. Isto, conjugado com
+a inibição de interrupções faz com que, se o wait não for acedido imediatamente
+(sem entrar no ciclo while), ficara la permanentemente em deadlock, porque o
+eventual processo que fara o signal nunca sera scheduled. Este raciocinio e valido
+para sistemas monoprocessador, mas em sistemas multiprocessador surge outro prob:
+A inibição de interrupts nao exclui o acesso aos dados do semaforo por processadores 
+diferentes.
+
+b)
+Pretende-se implementar uma "barreira de N 
+processos", isto é, garantir que cada processo, de um conjunto 
+de processos, espera, em determinado ponto da sua execução, 
+que todos os outros processos do conjunto atinjam um certo 
+ponto da respectiva execução. Tomando um conjunto de 
+3 processos como exemplo, teríamos a situação ilustrada, ao 
+lado. Indique como implementaria uma "barreira de 
+N processos", recorrendo a semáforos. Admita que dispõe das 
+seguintes funções que operam sobre semáforos:  
+init(sem,value), wait(sem) e signal(sem).
+
+n = the number of threads
+count = 0
+init (mutex, 1)
+init (barrier, 0)
+
+
+wait(mutex)
+count = count + 1
+signal(mutex)
+
+if count == n: 
+	signal(barrier) # unblock ONE thread
+
+wait(barrier)
+signal(barrier) #it's our duty to unlock the next one
+
+c) Um servidor tem ligadas a si 5 impressoras e tem N processos em execução. 
+Cada processo pode requisitar até M impressoras. 
+Para cada um dos seguintes valores de N e M, indique, justificando, 
+se há ou não possibilidade de ocorrência de deadlocks: 
+	c.1) N=1, M=3;
+Não existe possibilidade de deadlock. So existe um processo, capaz de ter
+3 impressoras atribuidas e existem cinco disponiveis.
+	c.2) N=2, M=3; 
+Não existe possibilidade de deadlock. Se um processo ficar com 3 impressoras
+e o outro ficar com 2, o ultimo so tem de esperar que o primeiro acabe.
+	c.3) N=4, M=3;
+Existe possibilidade de deadlock. Se tivermos uma distribuiçao do genero 1-1-1-2,
+os processos ficarao para sempre a espera que se libertem recursos
+	c.4) N>2, M=1.
+Nao existe possibilidade de deadlock. Cada proc so tem uma impressora alocada no maximo,
+mal esta seja libertada pode ser alocada por outro processo, nunca induzindo deadlocks.
+
+3.3. 
+Um programador que tinha desenvolvido um programa de manipulação de matrizes bidimensionais de grande 
+dimensão, em linguagem Fortran, verificou que depois de traduzir o programa para linguagem C, recorrendo a um 
+tradutor automático, o programa passou a executar muito mais lentamente, embora o sistema de computação fosse o 
+mesmo e a "carga do sistema" semelhante à anterior. Sabendo que os elementos de uma matriz são guardados, em 
+Fortran, coluna a coluna (isto é, os elementos da primeira coluna, seguidos dos da segunda coluna, etc.) e, em C, 
+linha a linha (isto é, os elementos da primeira linha, seguidos dos da segunda linha, etc.), encontra alguma explicação 
+para que isto tenha acontecido, que possa ser justificada pela técnica de gestão de memória utilizada? Justifique a sua 
+resposta e descreva as condições gerais para a ocorrência de situações semelhantes.
+
+R: Tem tudo a ver com a paginação. Um exemplo óbvio seria usar uma matriz de 4k por 4k, num sistema com páginas de 4k.
+Isto significa que um segmento da matriz (uma coluna no Fortran ou uma linha no C) cabe numa única página. Se o programa
+corre mais rapidamente em Fortran, significa que o programa percorre as matrizes coluna a coluna, ou seja, percorre uma
+página até o fim de cada vez. Se o programa for literalmente portado para linguagem C, percorrer a matriz coluna a coluna
+significa ir à posição X de cada página, depois à posição X+1 cada página, até chegar ao final das páginas todas. No final
+teremos percorrido as páginas todas, mas carregado cada página 4k vezes, no pior caso.
+
+PORQUE CARALHOS É QUE NAO METEM INFORMAÇAO DO TIPO O GAJO ESTAR A FAZER COLUNA A COLUNA NO ENUNCIADO? ACHAM QUE TEMOS TELEKINESE? FODASSE.
+[**se for isto que acontece, às páginas são simplesmente preenchidas de outra forma** Y/N]
+O Professor explicou este caso detalhadamente numa das teóricas. E não, as páginas não são por magia preenchidas da forma que queres.
+Sobre a telequinese, a pergunta é "encontra alguma explicação?". E esta é uma explicação. Poderão haver outras.
+
+4. 
+Considere um sistema de ficheiros de tipo Unix. Para cada um dos seguintes itens 
+indique qual o local ou estrutura de dados em que ele é guardado:
+
+1) nome de um ficheiro; 
+Directorio que o contem
+
+2) tamanho de um ficheiro; 
+3) data da última modificação de um ficheiro; 
+5) lista de blocos de dados que compõem um ficheiro; 
+inode
+
+4) número do i-node associado a um ficheiro;
+Tabela de ficheiros abertos
+
+7) descritor associado a um ficheiro; 
+Tabela de descritores por processo
+
+8) apontador do ficheiro 
+	- local do ficheiro onde será efectuada a próxima operação de leitura/escrita; 
+Descritor de ficheiro
+
+9) lista de blocos livres do disco.
+tabela de bits ou lista ligada de blocos livres

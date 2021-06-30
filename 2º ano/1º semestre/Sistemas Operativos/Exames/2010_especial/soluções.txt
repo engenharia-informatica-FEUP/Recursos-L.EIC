@@ -1,0 +1,177 @@
+Parte A-1
+// Utilizo aqui a paginação da compilação de slides aqui da dropbox (com 218 páginas). 
+
+1) Multiprogramação é a execução interlaçada de processos, num único processador (CPU), tendo em vista a maximização da 
+sua utilização. (page 10)
+
+2) Os dois modos de operação servem para impedir que os processos dos utilizadores possam executar directamente certas instruções-máquina, as 
+quais só podem ser executas em modo supervisor, através de "chamadas ao sistema" feitas por esses 
+processos. (page 25)
+
+3) Um processo diz-se bloqueado se estiver à espera de um evento ou de um recurso. (Page 44)
+
+4) A afirmação falsa: «A comunicação entre  threads de um mesmo processo é facilitada pelo facto de todas as  threads 
+poderem aceder às variáveis globais do processo.» (Page 59) Não são partilham as variáveis globais, como também outros tipos de recursos, como ficheiros ou dispositivos de I/O.
+- Acho que a correcta é a c).
+- Pois, eu no início também... mas na página 57/218 dos slides diz «a comutação entre threads do mesmo processo é muito menos pesada do que entre processos tradicionais»...
+- "Muito menos pesada" -> mais leve. É mais rapido comutar entre threads do mesmo processo que comutar entre processos.
+o que faz d c) "O tempo de comutação entre threads de um mesmo processo é maior que o tempo de comutação entre 
+processos" falsa.
+- :| ok, li essa opção completamente ao contrário. peço desculpa.
+
+
+5) A afirmação falsa: «Favorece os processos que fazem uso intensivo de operações de entrada/saída».
+Pelo contrário, o Round Robin favorece os processos CPU-bound, ou seja, que fazem uso intensivo do processador. (Page 80)
+
+6) Uma secção crítica acede a variáveis ou recursos comuns a mais do que um processo/thread, variáveis e recursos esses 
+que têm de ser usados em exclusão mútua. (Page 97).
+
+7) Afirmação falsa: «O contador do semáforo pode ser inicializado com qualquer valor, positivo, nulo ou negativo».
+Um semáforo pode ser inicializado apenas com valores iguais ou superiores a zero.
+
+8)
+ P1				 P2
+…				…
+wait(S1) 		wait(S2) 
+wait(S2) 		wait(S1)
+… 				…
+signal(S2) 		signal(S1)
+signal(S1) 		signal(S2)
+…				…
+
+Não se sabe quem executa primeiro nem se algum deles é interrompido. Por exemplo, se P1 executar primeiro e não for interrompido, P2 vai poder executar alegremente em seguida.
+Mas se P1 foi interrompido logo após "wait(S1)", os dois vão ficar em deadlock. Portanto, a resposta é a A, "podem entrar em deadlock".
+
+9) Em Unix/Linux, para obter uma lista dos processos em execução usa-se o comando "ps". (sauce: lol)
+
+10) Das três chamadas ao sistema "open", "mkfifo" e "pipe" apenas a última não retorna um descritor de ficheiro.
+A chamada pipe(int filedes[2]) recebe como parametro um array com dois descritores de ficheiro, e é por aí que são retornados.
+- Acho que aqui é suposto intrepetares esse array como retornando descritor porque o mkfifo não retorna descritor (http://linux.die.net/man/3/mkfifo)
+- Pois, tens razão. O mkfifo usa o nome do fifo. Thx.
+
+11) A chamada ao sistema wait() permite que um processo espere que qualquer um dos seus processos-filhos termine. 
+
+12) A chamada ao sistema signal() é usada para instalar o handler de um sinal. http://linux.die.net/man/2/signal
+
+13) O pipe tem de ser criado antes de ser criado o processo-filho para que o filho possa herdar o descritor.
+Se for criado após o fork, apenas um, o pai ou o filho, terá acesso ao pipe, ou então cada um cria um pipe distinto.
+
+14) Uma das vantagens dos FIFOs relativamente aos pipes é que podem ser usados para transferir informação entre quaisquer
+dois processos que estejam em execução num mesmo computador.
+
+Parte A-2
+
+1a) O semáforo m deve ser inicializado a 1 para só permitir a "entrada" de um consumidor no buffer.
+    O semáforo mayConsume começa com 0, assumindo que no início nenhum produtor colocou produtos no buffer. Ou seja,
+mayConsume é inicializado com o número actual de produtos consumíveis.
+	mayProduce é inicializado com N, fazendo a suposição anterior. Isto é, começa com o valor de slots livres no buffer
+dos produtos a consumir.
+	Esta configuração permite que apenas um consumidor, em qualquer instante, pode aceder à memória crítica (o buffer),
+que nenhum processo (produtor ou consumidor) pode tentar consumir produtos quando o buffer está vazio e que os produtores
+podem começar a encher o buffer com produtos conforme forem sendo consumidos.
+
+1b)
+...
+do
+	sem_wait(mayProduce);
+	sem_wait(m);
+	I = (I-1)%N;
+	buffer[I] = item;
+	sem_signal(m);
+	sem_signal(mayConsume);
+while ...
+...
+
+2a) O resultado não é o esperado pois o programa enviou um apontador para um inteiro a cada thread. Ora, este apontador é
+partilhado por todos os threads, ou seja, todos os threads têm um apontador para o mesmo inteiro e quaisquer alterações neste
+inteiro por um dos threads é visível pelos demais. Como os vários processos não correm em simultâneo, mas concorrentemente,
+o inteiro é alterado várias vezes antes de ser imprimido - além disso as função de I/O são mais lentas que o assignment de
+novos valores ao inteiro.
+
+2b) Basta que se passe o valor do inteiro como parâmetro em vez de passa-lo por referência. Deste modo, cada thread terá uma
+cópia distinta do valor desse inteiro, com o valor de quando foi criado.
+
+PARTE B
+(não te importas que faça hijack, pois nao? :P)
+(faz favor, a thread não é minha, criei para todos)
+
+Não me apetece fazer o C direitinho, mas aqui vai a ideia base
+
+1
+
+main:
+	criar pipe
+	fork
+	se pai:
+		linesread = 0
+		char buf[line_len]
+		while readline (pipe, buf):
+			write STDOUT_FILENO, buf
+			++linesread
+		write STDOUT_FILENO, itoa(linesread)
+		wait 0 //esperar pelo filho	
+	se filho:
+		dup2 (pipe, STDOUT_FILENO) //redireccionar STDOUT para o pipe
+		exec ls -lasR argv[0]
+		
+
+2
+
+//Codigo final, penso que esta correcto tirando eventuais
+//distracçoes. So nao esta feita a d) porque sinceramente nao
+//entendo o que eles querem. Have fun. Mais uma vez escrito na 
+//minha mistura manhosa de ruby, C e python
+
+in = 0, out = 0, currentComputerIndex = 0
+vec_names[][]
+
+struct nameAndNumber:
+	name[]
+	number
+
+show_resources (void* arg):
+	print "Vai ser obtida info do PC num. ", (nameAndNumber *) arg->number
+	get_and_print_computer_resources((nameAndNumber *) arg->name)
+	print "Obtida info do PC num. ", (nameAndNumber *) arg->number
+	free arg
+	
+consumer_proc (void* arg):
+	threadIDs[10]
+	while 1:
+		for i in 0..10
+			wait mayConsume
+		wait m
+		for i in 0..10
+			ptr = malloc sizeof nameAndNumber
+			ptr->name = show_resources(vec_names(in))
+			ptr->number = i
+			threadIDs[i] = createthread ptr
+			in = (in+1) % N
+			
+		for i in 0..10
+			threadjoin threadIDs[i]
+		
+		signal m
+		signal mayProduce
+	
+producer_proc (void* arg):
+	vec_names = get_computer_names()
+	while 1:
+		if (vec_names[currentComputerIndex] == NULL)
+			vec_names = get_computer_names()
+		wait mayProduce
+		wait m
+		buffer[out] = vec_names[currentComputerIndex]
+		out = (out+1) % N
+		currentComputerIndex++
+		signal m
+		signal mayConsume
+	
+main:
+	m = sem_create(1)
+	mayConsume = sem_create(0)
+	mayProduce = sem_create(1)
+	createthread consumer_proc, NULL
+	createthread producer_proc, NULL
+	
+	

@@ -1,0 +1,90 @@
+Parte 1
+1. As variáveis de ambiente costumam ser utilizadas  para fornecer..
+	A) informação comum a um conjunto de programas.
+	
+2. O software de um sistema computacional é constituído por dois tipos de componentes:
+	B) programas de sistema e programas de aplicação.
+	
+3. Um sistema operativo é um “simulador de máquina virtual”. Isso quer dizer que:
+	A) facilita a programação de aplicações.
+	
+4. Concorrência de processos  quer dizer
+	A) execução “simultânea” de vários processos, provavelmente competindo pelos mesmos recursos.
+	
+5. Os três principais estados de um processo reconhecido pelo sistema operativo são:
+	A) prontidão, bloqueamento, execução.
+	
+6. Em Unix, quando um processo pretende executar um programa diferente do inicial, terá sempre de 
+invocar a chamada fork().
+	Não, se se pretender descontinuar o processo inicial. Basta, então, invocar­se execve() ou uma 
+variante.
+
+7. Deve optar­se por programação com threads relativamente à programação por processos..
+	B) quando se pretender facilitar a troca de informação entre as partes do programa.
+	
+8. Uma condição de competição (race condition) surge quando dois ou mais processos..
+	B) tentam partilhar de forma sincronizada um mesmo conjunto de recursos.
+	
+9. Um processo fora da zona crítica não pode impedir outro de entrar na região.
+	C) Não, não pode, pois estaria a tornar o sistema ineficiente e com tendência a encravar.
+	(pag. 98 dos slides 2011)
+	
+10. Uma das estratégias para se lidar com encravamentos ao nível do sistema operativo preconiza.
+	A) detectar­se o problema e tentar resolvê­lo, eventualmente terminando alguns processos.
+	
+11. Considere um sistema em que a memória, numa dada ocasião, apresenta os seguintes espaços vazios 
+(holes), por ordem crescente de posição: 10K, 4KB, 20KB, 18KB, 7KB e 9KB. Nessa situação, foram 
+feitos 3 pedidos sequenciais de memória: 12KB, 10KB e 9 KB, após o que a lista ordenada de 
+espaços vazios ficou: 4KB, 9KB 7 KB e 9 KB. Qual foi o método de alocação utilizado?
+	 - a cena ta mal, deveria estar 4KB,9KB,9KB,7KB,9KB e é best fit
+	 > ah! tava a ver que eu fiquei a suar de tentar encaixar nos espaços :S era impossível.
+	 
+12. Um sistema de memória virtual:
+	 ) Also no ideia.
+B) pode utilizar paginação com segmentação.(source:wikipedia, 64 usa 34 não)
+	> teóricas qual quê! wikipédia basta pra passar o curso :P
+	^so true
+	 
+13. Os discos rígidos utilizados nos PCs modernos costumam
+	A) ter uma componente de software de controlo embutida.
+	
+14. Muitos dos pedidos a dispositivos de E/S são bloqueantes por não poderem ser normalmente 
+atendidos com a rapidez necessária à operação do processador. Por isso
+	C) é importante que uma interrupção avise o sistema quando a resposta chegar, a fim de o processo 
+requisitante ser acordado.
+
+15. Os directórios, ao contrário dos ficheiros regulares, costumam ser implementados por uma 
+estrutura interna que traduz a sua estrutura de dados.
+	C) Sim, por isso é que existem chamadas ao sistema específicas de directórios, e.g. opendir().
+	
+Parte 2
+
+3. [1 val.] Diga se cada programador pode escrever o código para guardar e repor o estado de um processo quando este 
+cede e retoma o uso do CPU.
+	
+	> O escalonamento dos processos é feito em modo supervisor pelo sistema operativo. Além disso,
+	do ponto de vista do processo, ele dispõe do computador só para ele. Qualquer limitação
+	causada pelo seu escalonamento não lhe é visível.
+	
+4. [1 val.] Explique o conceito de thread, distinguindo­o de processo.
+	
+	> Um thread pode ser visto como um processo leve. Ambos caracterizam-se por terem um determinado grupo
+	de recursos a eles associado, como memória, ficheiros, dispositivos I/O e um program counter.
+	A grande diferença entre os dois é na partilha de recursos. Um processo pode conter vários threads e
+	os vários threads têm acesso aos recursos globais (código/funções , variáveis, ficheiros abertos..) do seu respectivo
+	processo. A partilha torna-se, assim, muito mais simples que entre processos - nesse caso, seria necessário
+	recorrer a outro tipo de comunicação, como memória partilhada ou named pipes.
+	
+5. [1,5 val.] Num sistema operativo em que o escalonamento do processador é do tipo "à vez" (round­robin) correm 
+	vários processos, maioritariamente I/O bound. Admitindo que: Q = quantum atribuído a cada processo; C = duração 
+	média da comutação de contexto; B = duração média dos picos de processamento (CPU­bursts) dos processos, 
+	discuta o efeito da fixação dos seguintes valores para Q no desempenho global do sistema:
+	
+	> Antes demais, é importante verificar que os processos são maioritarimanete IO bound, isto é, em média, estão
+	mais tempo a espera de resposta de dispositivos de entrada e saída do que a usar o seu tempo de processador.
+	  No primeiro caso, Q = C, ou seja o tempo atribuído a um processo chega apenas para o tempo de comutação - mudança
+	de um processo para o outro - e	o processador nem chega a fazer muitos cálculos. O sistema torna-se lento,
+	perde-se o tempo todo a mudar de um processo para o outro e os programas não avançam.
+	  No segundo caso, Q = B, ou seja, o tempo de CPU atribuído a um processo é aproximadamente igual ao
+	tempo que demoram as fases IO bound dos processos. Esta solução é ideal (continua...)
+	

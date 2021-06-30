@@ -1,0 +1,39 @@
+Estou a partilhar as minhas resoluções dos exercícios à medida que os faço.
+Agradecia feedback e discussão das respostas menos correctas! kthx
+
+Parte 1
+
+1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10| 11| 12| 13| 14| 15
+B | C | A | A | A | A | C | B | A | A | B | B | C | B | A
+
+Parte 2
+
+1 - Apresente uma vantagem e uma desvantagem da utiliza‹o da tŽcnica de liga‹o (linking) din‰mica de programas relativamente ˆ liga‹o est‡tica.
+	> Utilizando apenas linking est‡tico, a utiliza‹o de m—dulos externos implica que esses m—dulos sejam inclu’dos no programa na fase de compila‹o o que implica maiores gastos de espaço no disco. Esse gasto
+não ocorre com a ligação dinâmica, porque neste caso as bibliotecas ou outros recursos que sejam necessários
+são carregados durante o carregamento e/ou execução do programa. Outra vantagem que advém desta é que os mesmos
+recursos podem ser utilizados por vários programas, enquanto que com a ligação estática cada programa tem uma
+cópia dos mesmo recursos.
+	Por outro lado, ao incluir esses recursos no programa, quando compilado com ligação estática, ele é
+mais portável, isto é, pode ser executado em sistemas compatíveis que no entanto não tenham as bibliotecas
+necessárias instaladas. Esta é uma das desvantagens da ligação dinâmica.
+sauce: Operating Systems Concepts, 6th Edition, page 724/978 (@dropbox)
+
+2 - Explique a diferença em programa e processo.
+	> Essencialmente, um processo é um programa em execução.
+	Um programa é composto pelos seus ficheiros de código. Um processo inclui esse código e ainda os dados
+alocados (variáveis, objectos..), ficheiros abertos e outros recursos atribuídos à sua execução, tais como
+o seu tempo de CPU (time share) e dispositivos de I/O.
+
+3 -  Um programa multi­thread de processamento intensivo foi posto a correr em duas máquinas: uma, mono­
+processador; outra, multi­processador. Curiosamente, verificou­se que a rapidez de execução do programa era 
+semelhante. Tente explique o facto.
+	> Os sistemas que implementam a especificação POSIX podem ou não implementar threads a nível do kernel
+(kernel-level threads). Nesse caso, o kernel vê cada thread como um processo individual e atribui a cada um
+uma "fatia de tempo" individual. Caso os threads existam apenas nas bibliotecas de suporte (user-level threads)
+os threads são escalonados dentro do time share do seu respectivo processo, não havendo quaisquer melhorias
+a nível de tempo de execução em sistemas mono-processador. Mesmo em sistemas multiprocessador, só se verificam
+melhorias nos casos em que vários threads do nosso programa estejam de facto a correr em simultâneo - noutros 
+casos estaram a correr threads de outros processos distintos.
+sauce: Página 25 da API de Apoio
+

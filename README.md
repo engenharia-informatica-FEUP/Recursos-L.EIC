@@ -15,33 +15,33 @@
     </tr> 
     <tr>
         <td></td>
-        <td><a href=>Álgebra Linear e Geometria Analítica</a></td>
+        <td><a>Álgebra Linear e Geometria Analítica</a></td>
         <td></td>
-        <td><a href=>Física 1</a></td>
+        <td><a>Física 1</a></td>
     </tr>
     <tr>
         <td></td>
-        <td><a href=>Análise Matemática I</a></td>
+        <td><a>Análise Matemática I</a></td>
         <td></td>
-        <td><a href=>Análise Matemática II</a></td>
+        <td><a>Análise Matemática II</a></td>
     </tr>
     <tr>
         <td></td>
-        <td><a href=>Matemática Discreta</a></td>
+        <td><a>Matemática Discreta</a></td>
         <td></td>
-        <td><a href=>Teoria da Computação</a></td>
+        <td><a>Teoria da Computação</a></td>
     </tr>
     <tr>
         <td></td>
-        <td><a href=>Fundamentos da Programação</a></td>
+        <td><a>Fundamentos da Programação</a></td>
         <td></td>
-        <td><a href=>Programação</a></td>
+        <td><a>Programação</a></td>
     </tr>
     <tr>
         <td></td>
-        <td><a href=>Fundamentos de Sistemas Computacionais</a></td>
+        <td><a>Fundamentos de Sistemas Computacionais</a></td>
         <td></td>
-        <td><a href=>Arquitectura de Computadores</a></td>
+        <td><a>Arquitectura de Computadores</a></td>
     </tr>
 </table>
 
@@ -57,31 +57,31 @@
         <td></td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/2%C2%BA%20ano/1%C2%BA%20semestre/F%C3%ADsica%20II/README.md">Física II</a></td>
         <td></td>
-        <td><a href=>Métodos Estatísticos</a></td>
+        <td><a>Métodos Estatísticos</a></td>
     </tr>
     <tr>
         <td></td>
-        <td><a href=>Bases de Dados</a></td>
+        <td><a>Bases de Dados</a></td>
         <td></td>
-        <td><a href=>Linguagens e Tecnologias Web</a></td>
+        <td><a>Linguagens e Tecnologias Web</a></td>
     </tr>
     <tr>
         <td></td>
-        <td><a href=>Laboratório de Desenho e Teste de Software</a></td>
+        <td><a>Laboratório de Desenho e Teste de Software</a></td>
         <td></td>
-        <td><a href=>Engenharia de Software</a></td>
+        <td><a>Engenharia de Software</a></td>
     </tr>
     <tr>
         <td></td>
-        <td><a href=>Algoritmos e Estruturas de Dados</a></td>
+        <td><a>Algoritmos e Estruturas de Dados</a></td>
         <td></td>
-        <td><a href=>Desenho de Algoritmos</a></td>
+        <td><a>Desenho de Algoritmos</a></td>
     </tr>
     <tr>
         <td></td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/2%C2%BA%20ano/1%C2%BA%20semestre/Sistemas%20Operativos/README.md">Sistemas Operativos</a></td>
         <td></td>
-        <td><a href=>Laboratório de Computadores</a></td>
+        <td><a>Laboratório de Computadores</a></td>
     </tr>
 </table>
 
@@ -95,32 +95,32 @@
     </tr> 
     <tr>
         <td></td>
-        <td><a href=>Interação Pessoa Computador</a></td>
+        <td><a>Interação Pessoa Computador</a></td>
         <td></td>
-        <td><a href=>Computação Gráfica</a></td>
+        <td><a>Computação Gráfica</a></td>
     </tr>
     <tr>
         <td></td>
-        <td><a href=>Laboratório de Bases de Dados e Aplicações Web</a></td>
+        <td><a>Laboratório de Bases de Dados e Aplicações Web</a></td>
         <td></td>
-        <td><a href=>Projeto Integrador</a></td>
+        <td><a>Projeto Integrador</a></td>
     </tr>
     <tr>
         <td></td>
-        <td><a href=>Programação Funcional e em Lógica</a></td>
+        <td><a>Programação Funcional e em Lógica</a></td>
         <td></td>
-        <td><a href=>Inteligência Artificial</a></td>
+        <td><a>Inteligência Artificial</a></td>
     </tr>
     <tr>
         <td></td>
-        <td><a href=>Fundamentos de Segurança Informática</a></td>
+        <td><a>Fundamentos de Segurança Informática</a></td>
         <td></td>
-        <td><a href=>Compiladores</a></td>
+        <td><a>Compiladores</a></td>
     </tr>
     <tr>
         <td></td>
-        <td><a href=>Redes de Computadores</a></td>
+        <td><a>Redes de Computadores</a></td>
         <td></td>
-        <td><a href=>Computação Paralela e Distribuída</a></td>
+        <td><a>Computação Paralela e Distribuída</a></td>
     </tr>
 </table>

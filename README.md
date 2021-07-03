@@ -107,7 +107,7 @@
     </tr>
     <tr>
         <td></td>
-        <td><a>Programação Funcional e em Lógica</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/3%C2%BA%20ano/1%C2%BA%20semestre/Programa%C3%A7%C3%A3o%20Funcional%20e%20em%20L%C3%B3gica/README.md">Programação Funcional e em Lógica</a></td>
         <td></td>
         <td><a>Inteligência Artificial</a></td>
     </tr>

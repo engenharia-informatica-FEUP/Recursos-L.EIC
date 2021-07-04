@@ -101,7 +101,7 @@
     </tr>
     <tr>
         <td></td>
-        <td><a>Laboratório de Bases de Dados e Aplicações Web</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/3%C2%BA%20ano/1%C2%BA%20semestre/Laborat%C3%B3rio%20de%20Bases%20de%20Dados%20e%20Aplica%C3%A7%C3%B5es%20Web/README.md">Laboratório de Bases de Dados e Aplicações Web</a></td>
         <td></td>
         <td><a>Projeto Integrador</a></td>
     </tr>

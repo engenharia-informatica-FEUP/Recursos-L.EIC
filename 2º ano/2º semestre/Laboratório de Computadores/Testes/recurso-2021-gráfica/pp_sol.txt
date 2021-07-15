@@ -1,0 +1,219 @@
+/**
+ * DISCLAIMER
+ * This is a solution written from memory after the test, before even knowing my grade (altough I passed every public test in the exam).
+ * There may be a mistake in my code or reasoning that I did not catch at the time. Moreover, I may be misremembering or mistyping something
+ * so don't be surprised if this doesn't even compile. If you spot any mistake let me know (you may add comments to this file on google drive).
+ *
+ * In short, NOTHING IN THIS FILE IS GUARANTEED TO BE CORRECT.
+ *
+ * This is an mix between what I recall from my solution, some extra checks (like calling free to avoid memory leaks) that probably won't even
+ * be evaluated by the LCF and changes that I thought would make my solution easier to understand. There are also comments in some parts explaining
+ * why I did what I did or some LCF issues I stumbled upon.
+ */
+
+static uint16_t x_res, y_res;
+static uint8_t bpp, bypp, r_pos, r_sz, b_pos, b_sz, g_pos, g_sz;
+static size_t video_mem_size;
+static phys_addr_t phys_addr;
+static uint8_t *video_mem;
+static uint8_t *first_square_back_buffer;
+static uint8_t *second_square_back_buffer;
+
+#define BIT(n) (1<<(n))
+#define VERT_RETR_INT BIT(7)
+#define CONTROL_REG 0x28
+#define IRQ_LINE 7
+#define FPS 30
+
+int util_sys_inb(int port, uint8_t *byte) {
+    uint32_t val;
+    if (sys_inb(port, &val))
+        return 1;
+    *byte = val;
+
+    return 0;
+}
+
+int draw_pixel(uint8_t *buf, uint16_t x, uint16_t y, uint32_t color) {
+    if (x >= x_res || y >= y_res)
+        return 0; // it's not an error to be out of bounds, but nothing should be drawn
+        
+    uint8_t *mem_pos = buf + (y*x_res + x)*bypp;
+    color &= 0x00ffffff; // I needed to ignore the most significant bits to pass the tests in mode 2
+    
+    if (memcpy(mem_pos, &color, bypp) == NULL)
+        return 1;
+    
+    return 0;
+}
+
+int draw_hline(uint8_t *buf, uint16_t x, uint16_t y, uint16_t len, uint32_t color) {
+    for (int i = 0; i < len; i++) {
+        if (draw_pixel(buf, x+i, y, color))
+            return 1;
+    }
+    
+    return 0;
+}
+
+int draw_square(uint8_t *buf, uint16_t x, uint16_t y, uint16_t len, uint32_t color) {
+    for (int i = 0; i < len; i++) {
+        if (draw_hline(buf, x, y+i, color))
+            return 1;
+    }
+    
+    return 0;
+}
+
+int part1(uint16_t x, uint16_t y, uint16_t len, uint32_t color, uint8_t delay) {
+    if (memcpy(video_mem, first_square_back_buffer, video_mem_size) == NULL)
+        return 1;
+
+    sleep(delay);
+    return 0;
+}
+
+
+static int hook_id = 1;
+int part2(uint16_t x, uint16_t y, uint16_t len, uint32_t color, uint8_t delay) {
+    int ipc_status, irq_set = BIT(hook_id);
+    message msg;
+    
+    bool fail = false;
+    
+    if (sys_irqsetpolicy(IRQ_LINE, IRQ_REENABLE, &hook_id))
+        return 1;
+        
+    uint8_t ticks = delay * FPS * 2;
+
+    while( ticks > 0 ) {
+        /* Get a request message. */
+        int r;
+        if ( (r = driver_receive(ANY, &msg, &ipc_status)) != 0) { 
+            printf("driver_receive failed with: %d", r);
+            continue;
+        }
+        if (is_ipc_notify(ipc_status)) { /* received notification */
+            switch (_ENDPOINT_P(msg.m_source)) {
+            case HARDWARE: /* hardware interrupt notification */
+                if (msg.m_notify.interrupts & irq_set) {
+                    if (ticks > delay * FPS) {
+                        if (memcpy(video_mem, first_square_back_buffer, video_mem_size) == NULL) {
+                            fail = true;
+                            break;
+                        }
+                    } else {
+                        if (memcpy(video_mem, second_square_back_buffer, video_mem_size) == NULL) {
+                            fail = true;
+                            break;
+                        }
+                    }
+                    
+                    ticks--;
+                }
+                break;
+            default:
+                break;
+            }
+        } else {
+            /* no standard messages expected: do nothing */
+        }
+    }
+    
+    if (sys_irqrmpolicy(&hook_id))
+        return 1;
+
+    return fail;
+}
+
+int test_draw_square(uint32_t mode, uint16_t x, uint16_t y, uint16_t len, uint32_t color, uint8_t delay) {
+    mode_info_t inf;
+    if (get_mode_info(mode, &inf))
+        return 1;
+    
+    x_res = inf.x_res;
+    y_res = inf.y_res;
+    bpp = inf.bpp;
+    bypp = (bpp%8 == 0)? (bpp/8) : (bpp/8 + 1);
+    r_pos = inf.r_pos;
+    r_sz = inf.r_sz;
+    g_pos = inf.g_pos;
+    g_sz = inf.g_sz;
+    b_pos = inf.b_pos;
+    b_sz = inf.b_sz;
+    phys_addr = inf.phys_addr;
+    video_mem_size = x_res * y_res * bypp;
+    
+    video_mem = map_phys_mem(phys_addr, video_mem_size);
+    // The next two lines are not mandatory, but are used for this solution. An explanation can be found below
+    first_square_back_buffer = malloc(video_mem_size);
+    second_square_back_buffer = malloc(video_mem_size);
+    
+    if (video_mem == NULL || first_square_back_buffer == NULL || second_square_back_buffer == NULL) {
+        free(first_square_back_buffer);
+        free(second_square_back_buffer);
+        return 1;
+    }
+
+    uint8_t cmd;
+    if (util_sys_inb(CONTROL_REG, &cmd)) { // Just in case, so that the unknown bytes are not modified
+        free(first_square_back_buffer);
+        free(second_square_back_buffer);
+        return 1;
+    }
+
+    cmd &= 0xf0;
+    cmd |= mode;
+    /*
+     * For modularity I initially didn't have the following line. I would only set VERT_RETR_INT in part2,
+     * calling util_sys_inb again and updating the control word. This would result in the test not passing.
+     *
+     * Although that solution would be correct, the LCF is not smart enough to detect it as valid, because it
+     * was not prepared to handle multiple writes to the control word.
+     */
+    cmd |= VERT_RETR_INT; // Comment this line if you wish to go with part 1
+
+    if (sys_outb(CONTROL_REG, cmd)) {
+        free(first_square_back_buffer);
+        free(second_square_back_buffer);
+        return 1;
+    }
+
+    /*
+     * There are many ways to implement this. For the part 1 you could just draw directly into the video_mem.
+     *
+     * For the second part, as you need to erase the first square before drawing the second one you could draw a black
+     * square before drawing the second square. This would cause flickering on my machine (although it passes the public tests, so I'm not sure
+     * if LCF is even able to spot that problem) which could be fixed if the square was only erased in the transition frame instead of every frame.
+     *
+     * However I think a solution with back buffers is simpler and less error prone (maybe you don't share the same opinion though). Basically, as there are 
+     * only two static images (squares), I drew each in a separate auxiliary frame buffer and used memcpy to show the frame I wanted.
+     */
+    if (draw_square(first_square_back_buffer, x, y, len, color)) {
+        free(first_square_back_buffer);
+        free(second_square_back_buffer);
+        return 1;
+    }
+    if (draw_square(second_square_back_buffer, y, x, len, color)) { // You can ignore this one for part 1.
+        free(first_square_back_buffer);
+        free(second_square_back_buffer);
+        return 1;
+    }
+
+
+    int vr;
+    // Part 1
+    //vr = part1(x, y, len, color, delay);
+    
+    // Part 2.
+    vr = part2(x, y, len, color, delay);
+
+    free(first_square_back_buffer);
+    free(second_square_back_buffer);
+
+    cmd &= BIT(4) | BIT(5) | BIT(6);
+    if (sys_outb(CONTROL_REG, cmd))
+        return 1;
+    
+    return vr;
+}

@@ -1,0 +1,52 @@
+/* um monte de defines com valores do enunciado */
+#define BIT(n) (1<<n)
+
+int hook_id = 0;
+bool one_shot = false;
+uint8_t ih_timer;
+void timer_ih() {
+    uint32_t stat;
+    sys_inb(STAT_REG, &stat);
+    if (((stat & TIMER0_INT) && ih_timer == 0) || ((stat & TIMER1_INT) && ih_timer == 1)) one_shot = true;
+}
+
+int test_timer_one_shot(uint8_t timer, uint8_t int, enum ... unit) {
+    uint8_t ctrl = MODE_ONE_SHOT;
+    switch (timer) {
+    case 0: ctrl |= TIMER_SEL0; break;
+    case 1: ctrl |= TIMER_SEL1; break;
+    default: break; 
+    }
+    switch (unit) {
+    case milli: ctrl |= UNIT_MILLI; break;
+    case micro: ctrl |= UNIT_MICRO; break;
+    case second: ctrl |= UNIT_SECONDS; break;
+    default: return 1;
+    }
+    if (sys_outb(CTRL_REG, ctrl)) return 1;
+    uint8_t lsb = (uint8_t) intv;
+    uint8_t msb = (uint8_t) (intv >> 8);
+    int timer_reg;
+    if (timer == 0) timer_reg = TIMER0;
+    else timer_reg = TIMER1;
+    if (sys_outb(timer_reg, msb)) return 1;
+    if (sys_outb(timer_reg, lsb)) return 1;
+
+    bool end = false;
+    ih_timer = timer;
+    irq_set = BIT(hook_id);
+    if (irq_setpolicy(TIMER_IRQ, IRQ_REENABLE, &hook_id)) return 1;
+    
+    while ( !end ) {
+    // Driver receive e outras cenas do stor
+        if (msg. ... & irq_set) {
+            timer_ih();
+            if (one_shot) {
+                 print_do_stor(...);
+                 end = true;
+            }
+        }
+    }
+    if (sys_irqremovepolicy(&hook_id)) return 1;
+    return r;
+}

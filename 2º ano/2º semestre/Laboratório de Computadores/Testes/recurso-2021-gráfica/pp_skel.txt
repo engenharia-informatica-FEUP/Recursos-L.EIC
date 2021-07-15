@@ -1,0 +1,53 @@
+int part1(uint16_t x, uint16_t y, uint16_t len, uint32_t color, uint8_t delay) {
+
+}
+
+int part2(uint16_t x, uint16_t y, uint16_t len, uint32_t color, uint8_t delay) {
+    // IMPLEMENT YOUR SOLUTION HERE
+
+
+    int ipc_status, irq_set = 0;
+    message msg;
+
+    bool done = false;
+
+    while( !done ) {
+        /* Get a request message. */
+        int r;
+        if ( (r = driver_receive(ANY, &msg, &ipc_status)) != 0) { 
+            printf("driver_receive failed with: %d", r);
+            continue;
+        }
+        if (is_ipc_notify(ipc_status)) { /* received notification */
+            switch (_ENDPOINT_P(msg.m_source)) {
+            case HARDWARE: /* hardware interrupt notification */
+                if (msg.m_notify.interrupts & irq_set) {
+                    // YOU MAY NEED TO IMPLEMENT SOMETHING HERE
+                    
+                    
+                }
+                break;
+            default:
+                break;
+            }
+        } else {
+            /* no standard messages expected: do nothing */
+        }
+    }
+
+    return 0;
+}
+
+int test_draw_square(uint32_t mode, uint16_t x, uint16_t y, uint16_t len, uint32_t color, uint8_t delay) {
+    // IMPLEMENT YOUR SOLUTION HERE
+
+    int vr;
+    // Part 1
+    vr = part1(x, y, len, color, delay);
+    
+    // Part 2. Only implement and uncomment if part 1 passes the first 4 tests, otherwise
+    // you won't get marks for part 2.
+    // vr = part2(x, y, len, color, delay);
+
+    return vr;
+}

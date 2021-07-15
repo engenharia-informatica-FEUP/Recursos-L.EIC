@@ -4,6 +4,7 @@
  - Manuais, exames, exercícios, descrições informais, entre outros.
  - Este repositório é contributo de muitos estudantes e pretendo apenas ter aqui um meio de acesso fácil aos vários recursos. 
  - [Ver aqui plano de estudos separado por áreas.](plano%20de%20estudos.png)
+ - [Ver aqui plano de estudos oficial](https://sigarra.up.pt/feup/pt/cur_geral.cur_planos_estudos_view?pv_plano_id=31224&pv_ano_lectivo=2021&pv_tipo_cur_sigla=L)
 
 <table>
     <tr>
@@ -14,31 +15,31 @@
         <th colspan="2">2º semestre</th>
     </tr> 
     <tr>
-        <td></td>
+        <td>ALGA</td>
         <td><a>Álgebra Linear e Geometria Analítica</a></td>
-        <td></td>
+        <td>F I</td>
         <td><a>Física 1</a></td>
     </tr>
     <tr>
-        <td></td>
+        <td>AM I</td>
         <td><a>Análise Matemática I</a></td>
-        <td></td>
+        <td>AM II</td>
         <td><a>Análise Matemática II</a></td>
     </tr>
     <tr>
-        <td></td>
+        <td>MD</td>
         <td><a>Matemática Discreta</a></td>
         <td></td>
         <td><a>Teoria da Computação</a></td>
     </tr>
     <tr>
-        <td></td>
+        <td>FP</td>
         <td><a>Fundamentos da Programação</a></td>
         <td></td>
         <td><a>Programação</a></td>
     </tr>
     <tr>
-        <td></td>
+        <td>FSC</td>
         <td><a>Fundamentos de Sistemas Computacionais</a></td>
         <td></td>
         <td><a>Arquitectura de Computadores</a></td>
@@ -54,33 +55,33 @@
         <th colspan="2">2º semestre</th>
     </tr> 
     <tr>
-        <td></td>
+        <td>F II</td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/2%C2%BA%20ano/1%C2%BA%20semestre/F%C3%ADsica%20II/README.md">Física II</a></td>
-        <td></td>
+        <td>ME</td>
         <td><a>Métodos Estatísticos</a></td>
     </tr>
     <tr>
-        <td></td>
+        <td>BD</td>
         <td><a>Bases de Dados</a></td>
         <td></td>
         <td><a>Linguagens e Tecnologias Web</a></td>
     </tr>
     <tr>
-        <td></td>
+        <td>LDTS</td>
         <td><a>Laboratório de Desenho e Teste de Software</a></td>
-        <td></td>
+        <td>ES</td>
         <td><a>Engenharia de Software</a></td>
     </tr>
     <tr>
-        <td></td>
+        <td>AED</td>
         <td><a>Algoritmos e Estruturas de Dados</a></td>
-        <td></td>
+        <td>DA</td>
         <td><a>Desenho de Algoritmos</a></td>
     </tr>
     <tr>
         <td></td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/2%C2%BA%20ano/1%C2%BA%20semestre/Sistemas%20Operativos/README.md">Sistemas Operativos</a></td>
-        <td></td>
+        <td>LC</td>
         <td><a>Laboratório de Computadores</a></td>
     </tr>
 </table>
@@ -94,33 +95,33 @@
         <th colspan="2">2º semestre</th>
     </tr> 
     <tr>
-        <td></td>
+        <td>IPC</td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/3%C2%BA%20ano/1%C2%BA%20semestre/Intera%C3%A7%C3%A3o%20Pessoa%20Computador/README.md">Interação Pessoa Computador</a></td>
-        <td></td>
+        <td>CG</td>
         <td><a>Computação Gráfica</a></td>
     </tr>
     <tr>
-        <td></td>
+        <td>LBD</td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/3%C2%BA%20ano/1%C2%BA%20semestre/Laborat%C3%B3rio%20de%20Bases%20de%20Dados%20e%20Aplica%C3%A7%C3%B5es%20Web/README.md">Laboratório de Bases de Dados e Aplicações Web</a></td>
-        <td></td>
+        <td>PI</td>
         <td><a>Projeto Integrador</a></td>
     </tr>
     <tr>
-        <td></td>
+        <td>PFL</td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/3%C2%BA%20ano/1%C2%BA%20semestre/Programa%C3%A7%C3%A3o%20Funcional%20e%20em%20L%C3%B3gica/README.md">Programação Funcional e em Lógica</a></td>
-        <td></td>
+        <td>IA</td>
         <td><a>Inteligência Artificial</a></td>
     </tr>
     <tr>
-        <td></td>
+        <td>FSI</td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/3%C2%BA%20ano/1%C2%BA%20semestre/Fundamentos%20de%20Seguran%C3%A7a%20Inform%C3%A1tica/README.md">Fundamentos de Segurança Informática</a></td>
-        <td></td>
+        <td>C</td>
         <td><a>Compiladores</a></td>
     </tr>
     <tr>
-        <td></td>
+        <td>RC</td>
         <td><a>Redes de Computadores</a></td>
-        <td></td>
+        <td>CPD</td>
         <td><a>Computação Paralela e Distribuída</a></td>
     </tr>
 </table>

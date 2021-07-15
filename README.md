@@ -82,7 +82,7 @@
         <td></td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/2%C2%BA%20ano/1%C2%BA%20semestre/Sistemas%20Operativos/README.md">Sistemas Operativos</a></td>
         <td>LC</td>
-        <td><a>Laboratório de Computadores</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/2%C2%BA%20ano/2%C2%BA%20semestre/Laborat%C3%B3rio%20de%20Computadores/README.md">Laboratório de Computadores</a></td>
     </tr>
 </table>
 

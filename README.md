@@ -18,7 +18,7 @@
         <td>ALGA</td>
         <td><a>Álgebra Linear e Geometria Analítica</a></td>
         <td>F I</td>
-        <td><a href="">Física 1</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/1%C2%BA%20ano/2%C2%BA%20semestre/F%C3%ADsica%201/README.md">Física 1</a></td>
     </tr>
     <tr>
         <td>AM I</td>

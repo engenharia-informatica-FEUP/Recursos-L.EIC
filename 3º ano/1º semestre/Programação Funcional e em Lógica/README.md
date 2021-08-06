@@ -1,7 +1,7 @@
 # Programação Funcional e em Lógica
 
 ## Recursos
-* [Ficha da UC](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=459482)
+* [Ficha da UC](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=484434)
 * [Apontamentos](https://drive.google.com/drive/u/2/folders/1_o3AD6bY5H6sA7yNypbQB3gam7xIjv9N)
 * [Testes](Testes)
 * [Exames](Exames)

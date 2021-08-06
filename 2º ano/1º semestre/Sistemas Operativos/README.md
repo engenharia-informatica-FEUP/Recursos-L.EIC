@@ -4,7 +4,7 @@
 * A parte prática consiste em saber e programar em C com Linux. O professor não fala muito sobre isto nas aulas teóricas, mas encontram explicações no livro "O Sistema Operativo Unix - Alguns aspetos da sua API", de Miguel Pimenta Monteiro.   
 
 ## Recursos
-* [Ficha da UC](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=459478)
+* [Ficha da UC](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=484429)
 * [Apontamentos](https://drive.google.com/drive/u/2/folders/1fEiNzCWKdwCUZTMeJy-6lL1mXZgru2oE)
 * [Teóricas](https://drive.google.com/drive/u/2/folders/1aoRtY-7THP-VDifW8u5nWzutL3EpUPNv)
 * [Resumos](https://github.com/pedromsfernandes/ResumosMIEIC/tree/master/2Ano/SOPE)

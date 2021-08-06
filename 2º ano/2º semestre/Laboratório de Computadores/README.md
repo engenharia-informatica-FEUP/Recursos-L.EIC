@@ -3,7 +3,7 @@
 * **NOTA:** os testes fornecidos aqui não foram fornecidos pelos professores. Logo, alerta-se para que não tirem dúvidas sobre estes com eles, uma vez que estes podem ser mais tarde reutilizados. 
 
 ## Recursos
-* [Ficha da UC](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=459473)
+* [Ficha da UC](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=484426)
 * [Apontamentos](https://drive.google.com/drive/u/1/folders/1nSyFdHJiBNrU2t_vREL63zqM_Jtl_R6u)
 * [Teóricas](https://drive.google.com/drive/u/1/folders/1lbGw5HTkm3SmSukHoWhRn6nf6tyCx5xS)
 * [Informações sobre os testes](Testes)

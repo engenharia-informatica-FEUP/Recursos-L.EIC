@@ -18,7 +18,7 @@
         <td>ALGA</td>
         <td><a>Álgebra Linear e Geometria Analítica</a></td>
         <td>F I</td>
-        <td><a>Física 1</a></td>
+        <td><a href="">Física 1</a></td>
     </tr>
     <tr>
         <td>AM I</td>

@@ -3,7 +3,7 @@
 ## Recursos
 * [Ficha da UC](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=484362)
 
-* [Apontamentos](https://drive.google.com/drive/u/1/folders/1iqR41TzS2KScH9wn6ziZ6CcXWCdU5LYj)
+* [Apontamentos](https://drive.google.com/drive/folders/1PajMP86yoMftS_m7g52Xkrd07Z5r7B-d)
   
 * [Paul's Online Notes](https://tutorial.math.lamar.edu/)
 

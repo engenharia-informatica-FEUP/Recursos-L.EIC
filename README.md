@@ -2,7 +2,7 @@
 
  - Aqui podes encontrar todos os recursos para o L.EIC (Licenciatura em Engenharia Informática e Computação) da FEUP.
  - Manuais, exames, exercícios, descrições informais, entre outros.
- - Este repositório é contributo de muitos estudantes e pretendo apenas ter aqui um meio de acesso fácil aos vários recursos. 
+ - Pretende-se ter aqui um meio de acesso fácil, simples e organizado aos vários recursos. 
  - [Ver aqui plano de estudos separado por áreas.](plano%20de%20estudos.png)
  - [Ver aqui plano de estudos oficial.](https://sigarra.up.pt/feup/pt/cur_geral.cur_planos_estudos_view?pv_plano_id=31224&pv_ano_lectivo=2021&pv_tipo_cur_sigla=L)
 

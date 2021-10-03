@@ -3,7 +3,7 @@
 ## Recursos
 * [Ficha da UC](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=484342)
   
-* [Apontamentos](https://drive.google.com/drive/u/1/folders/1WtfQMCp-fNiPDDuSFhDV52x8JwlSOYp0)
+* [Apontamentos](https://drive.google.com/drive/folders/1wja-NeM_kv1Yp0heCMgOcnwatLeGgrbt)
   
 * [Testes](Testes)
   

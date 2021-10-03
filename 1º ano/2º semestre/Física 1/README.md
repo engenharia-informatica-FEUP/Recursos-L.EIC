@@ -6,7 +6,7 @@
 
 * [Livro (em HTML)](https://def.fe.up.pt/dinamica/)
 
-* [Livro (em PDF)](https://drive.google.com/drive/u/1/folders/1X2XE-r4QXmvQ9K_7C6Po0Afy-Cf6Rt4s)
+* [Livro (em PDF)](https://drive.google.com/drive/folders/1NYNa_X0jYjyF5_o4OiudorF8Aj_Z4AEa)
 
 * [Teóricas](Teóricas.pdf)
 

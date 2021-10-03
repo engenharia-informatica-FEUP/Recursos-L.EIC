@@ -4,8 +4,8 @@
 
 ## Recursos
 * [Ficha da UC](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=484426)
-* [Apontamentos](https://drive.google.com/drive/u/1/folders/1nSyFdHJiBNrU2t_vREL63zqM_Jtl_R6u)
-* [Teóricas](https://drive.google.com/drive/u/1/folders/1lbGw5HTkm3SmSukHoWhRn6nf6tyCx5xS)
+* [Apontamentos](https://drive.google.com/drive/folders/1clSIbN-qO6GwCOY_rv-tee0_mmFaXmDI)
+* [Teóricas](https://drive.google.com/drive/folders/1Mxhesy1DCdwah9vp5xRGri8uR-nOn2Oe)
 * [Informações sobre os testes](Testes)
 * Exemplos de projectos:
     * [LabWars 19/20](https://github.com/dmfrodrigues/feup-lcom): timer, keyboard, mouse, graphics, rtc, serial port (com LCF)

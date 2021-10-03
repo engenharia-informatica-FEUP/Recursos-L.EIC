@@ -5,12 +5,12 @@
 
 ## Recursos
 * [Ficha da UC](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=484429)
-* [Apontamentos](https://drive.google.com/drive/u/2/folders/1fEiNzCWKdwCUZTMeJy-6lL1mXZgru2oE)
-* [Teóricas](https://drive.google.com/drive/u/2/folders/1aoRtY-7THP-VDifW8u5nWzutL3EpUPNv)
+* [Apontamentos](https://drive.google.com/drive/folders/1u8Pgwgo37-_46VYDbaSkvl7xEEVTBU4S)
+* [Teóricas](https://drive.google.com/drive/folders/1vitRQ1BLlgqMeeP5zi_sPF3fvLoqgbHO)
 * [Resumos](https://github.com/pedromsfernandes/ResumosMIEIC/tree/master/2Ano/SOPE)
 * [Formulário](formulário.pdf)
 * [Exames](Exames)
 * [Fichas práticas](Práticas)
-* [Resoluções fichas práticas](https://drive.google.com/drive/u/2/folders/1RVHEK6M_6q9xYOtRAWTm2Iie3ua_MwlW)
+* [Resoluções fichas práticas](https://drive.google.com/drive/folders/1_b2Rx0UwM5z5q9LoQlmIhkUggSqL2jhY)
 * [VirtualBox tutorials](https://www.youtube.com/playlist?list=PLrpSjHQj3tT4DkBq5BEez99C1Oz0fLDSv): como instalar VirtualBox e Ubuntu, como criar uma pasta partilhada entre windows host e ubuntu guest, etc.
 * [Folhas de exercícios suplementares (de Jorge A. Silva)](Exercicios-adicionais)

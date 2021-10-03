@@ -34,7 +34,7 @@
     </tr>
     <tr>
         <td>FP</td>
-        <td><a>Fundamentos da Programação</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/1%C2%BA%20ano/1%C2%BA%20semestre/Fundamentos%20da%20Programa%C3%A7%C3%A3o/README.md">Fundamentos da Programação</a></td>
         <td></td>
         <td><a>Programação</a></td>
     </tr>

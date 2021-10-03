@@ -28,7 +28,7 @@
     </tr>
     <tr>
         <td>MD</td>
-        <td><a>Matemática Discreta</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/1%C2%BA%20ano/1%C2%BA%20semestre/Matem%C3%A1tica%20Discreta/README.md">Matemática Discreta</a></td>
         <td></td>
         <td><a>Teoria da Computação</a></td>
     </tr>

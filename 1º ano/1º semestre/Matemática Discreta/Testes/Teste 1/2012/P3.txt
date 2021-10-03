@@ -1,0 +1,13 @@
+A frase mais obscura é possívelmente a frase 13.
+
+((SameShape(d, e) ∧ SameSize(d, e)) → ¬(SameShape(c, d) ∧ Medium(d))) → ⊥ <=>
+
+¬((SameShape(d, e) ∧ SameSize(d, e)) → ¬(SameShape(c, d) ∧ Medium(d))) <=>
+
+(SameShape(d, e) ∧ SameSize(d, e)) ∧ (SameShape(c, d) ∧ Medium(d))
+
+
+
+Usando P → ⊥ <=> ¬P
+
+e ¬(P → Q) <=> P ∧ ¬Q.

@@ -1,0 +1,1 @@
+6.0macs:Mac OS X10.4.1SntP7Tet(b) % Tet(c)Dodec(b) % Dodec(c)Cube(b) % Cube(c)Tet(a) & ~Tet(b)FrontOf(a, b) $ (FrontOf(b, c) | FrontOf(c, b))LeftOf(a, c) $ ~LeftOf(a, b)BackOf(b, a) % BackOf(c, b)s=33430;

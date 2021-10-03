@@ -1,0 +1,52 @@
+Pergunta 1
+
+Das várias soluções que foram aparecendo (um problema de definição e uso de uma linguagem tem sempre mais do que uma solução), há duas mais frequentes, que passo a apresentar.
+
+Solução A:
+----------
+Predicados:
+Compra(x,y,w,z) - x compra y do ano w pelo valor z
+MaisAntigo(x,y) - x é mais antigo do que y
+MaisCaro(x,y) - x é mais caro do que y
+Ano(x,y) - x é do ano y
+
+Funções:
+carro(x) - carro que x comprou
+
+Constantes:
+rui, ana, nuno, bmw, opel, 2005, 2006, 2007, 2008, 16000€, 22000€
+
+Nota1: aqui bmw e opel são nomes de carros concretos, não de marcas em geral; se houvesse mais veículos e pudessem surgir ambiguidades poder-se-ia usar bmw1, opel2...
+Nota2: tanto as constantes como os termos que concretizam as funções representam objetos e são, por convenção, escritos com letra minúscula.
+
+Pergunta 2.
+1. Compra(rui,opel,2007,16000€)
+2. Compra(ana,bmw,2006,22000€)
+3. Ano(carro(nuno),2005) ∨ Ano(carro(nuno),2008)
+4. MaisAntigo(bmw,opel) → MaisCaro(bmw,opel)
+5. ¬Ano(carro(nuno),2008) → MaisAntigo(carro(nuno),opel)
+6. ¬MaisCaro(carro(rui),carro(nuno)) ∧ ¬MaisCaro(carro(ana),carro(nuno))
+
+Solução B:
+----------
+Predicados:
+Compra(x,y) - x compra y
+x = y - x é o mesmo que y
+x < y - x é menor que y
+
+Funções:
+carro(x) - carro que x comprou
+ano(x) - ano do carro x
+preco(x) - preço do carro x
+
+Constantes:
+rui, ana, nuno, bmw, opel, 2005, 2006, 2007, 2008, 16000€, 22000€
+
+Pergunta 2.
+1. Compra(rui,opel) ∧ ano(opel)=2007 ∧ preco(opel)=16000€
+2. Compra(ana,bmw) ∧ ano(bmw)=2006 ∧ preco(bmw)=22000€
+3. ano(carro(nuno)) = 2005 ∨ ano(carro(nuno))=2008
+4. ano(bmw) < ano(opel) → preco(opel) < preco(bmw)
+5. ¬ano(carro(nuno))=2008 → ano(carro(nuno)) < ano(opel)
+6. ¬preco(carro(nuno))<preco(carro(rui)) ∧ ¬preco(carro(nuno))<preco(carro(ana))
+

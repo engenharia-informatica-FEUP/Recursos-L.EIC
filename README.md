@@ -22,7 +22,7 @@
     </tr>
     <tr>
         <td>AM I</td>
-        <td><a>Análise Matemática I</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/1%C2%BA%20ano/1%C2%BA%20semestre/An%C3%A1lise%20Matem%C3%A1tica%20I/README.md">Análise Matemática I</a></td>
         <td>AM II</td>
         <td><a>Análise Matemática II</a></td>
     </tr>

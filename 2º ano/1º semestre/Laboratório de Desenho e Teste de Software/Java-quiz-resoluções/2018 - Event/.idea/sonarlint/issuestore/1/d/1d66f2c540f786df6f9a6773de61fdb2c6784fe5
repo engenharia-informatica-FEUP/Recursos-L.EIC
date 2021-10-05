@@ -1,0 +1,29 @@
+
+D
+java:S1905À"(Remove this unnecessary cast to "Event".(ÒÂÊ˜üÿÿÿÿ
+D
+java:S1905Æ"(Remove this unnecessary cast to "Event".(¨œßáûÿÿÿÿ
+q
+java:S1192C"[Define a constant instead of duplicating this literal "non-profit tech conference" 3 times.(Æ°Èó
+|
+java:S2293×"YReplace the type specification in this constructor call with the diamond operator ("<>").(´²€¦ùÿÿÿÿ8 Àœˆ/
+h
+java:S1192'"RDefine a constant instead of duplicating this literal "23 to 26 of March" 4 times.(‘ÁÎ
+p
+java:S2293®"YReplace the type specification in this constructor call with the diamond operator ("<>").(½ÈæŸ
+i
+java:S1192C"SDefine a constant instead of duplicating this literal "January 20th, 2017" 3 times.(Æ°Èó
+F
+java:S5960"+Remove this assertion from production code.(Ç’çùÿÿÿÿ
+H
+java:S1199z"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ
+D
+java:S1905Î"(Remove this unnecessary cast to "Event".(…ğÓúÿÿÿÿ
+_
+java:S1192C"IDefine a constant instead of duplicating this literal "TalkABit" 4 times.(Æ°Èó
+0
+java:S1220""Move this file to a named package.
+e
+java:S1192Q"JDefine a constant instead of duplicating this literal "WebSummit" 3 times.(Â¡àÀûÿÿÿÿ
+9
+java:S1643ä"Use a StringBuilder instead.(ĞËÊ}8óìœˆ/

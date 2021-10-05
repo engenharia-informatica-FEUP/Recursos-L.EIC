@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aor.numbers.ListSorterTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-03-30T18:29:36" hostname="DESKTOP-8K2F2TL" time="0.003">
+  <properties/>
+  <testcase name="sort()" classname="com.aor.numbers.ListSorterTest" time="0.001"/>
+  <testcase name="bug_sort_8276()" classname="com.aor.numbers.ListSorterTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

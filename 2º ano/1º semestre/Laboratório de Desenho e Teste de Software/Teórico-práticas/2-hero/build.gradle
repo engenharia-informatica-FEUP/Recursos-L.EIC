@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'com.aor.hero'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClassName = 'com.aor.hero.Application'
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+
+    implementation('com.googlecode.lanterna:lanterna:3.1.1')
+}
+
+test {
+    useJUnitPlatform()
+}

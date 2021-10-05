@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'info.solidsoft.pitest' version '1.6.0'
+}
+
+group 'com.aor.numbers'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+pitest {
+    junit5PluginVersion = '0.12'
+}
+
+dependencies {
+  testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+  testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+
+  testImplementation('org.mockito:mockito-core:3.7.7')
+}
+
+test {
+    useJUnitPlatform()
+}

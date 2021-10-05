@@ -1,0 +1,12 @@
+com/aor/numbers/DivisibleByFilterTest.java
+ com.aor.numbers.DivisibleByFilterTest
+com/aor/numbers/ListDeduplicatorTest.java
+ com.aor.numbers.ListDeduplicatorTest
+com/aor/numbers/ListAggregatorTest.java
+ com.aor.numbers.ListAggregatorTest
+com/aor/numbers/ListSorterTest.java
+ com.aor.numbers.ListSorterTest
+com/aor/numbers/PositiveFilterTest.java
+ com.aor.numbers.PositiveFilterTest
+com/aor/numbers/ListFiltererTest.java
+ com.aor.numbers.ListFiltererTest

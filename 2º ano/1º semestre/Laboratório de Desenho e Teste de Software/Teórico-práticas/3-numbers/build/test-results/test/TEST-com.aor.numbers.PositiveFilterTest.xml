@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aor.numbers.PositiveFilterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-30T18:29:36" hostname="DESKTOP-8K2F2TL" time="0.001">
+  <properties/>
+  <testcase name="accept()" classname="com.aor.numbers.PositiveFilterTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

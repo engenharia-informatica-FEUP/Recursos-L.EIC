@@ -1,0 +1,13 @@
+
+0
+java:S1220""Move this file to a named package.
+J
+java:S3740"/Provide the parametrized type for this generic.(ÿ¥ĞÛûÿÿÿÿ
+T
+java:S5993"9Change the visibility of this constructor to "protected".(›¶„úÿÿÿÿ
+o
+java:S1210"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(ò ü±
+T
+java:S5993"9Change the visibility of this constructor to "protected".(ùíó¹üÿÿÿÿ
+\
+java:S1161 ":Add the "@Override" annotation above this method signature(æÙùàÿÿÿÿÿ8şòìœˆ/

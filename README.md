@@ -62,7 +62,7 @@
     </tr>
     <tr>
         <td>BD</td>
-        <td><a>Bases de Dados</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/2%C2%BA%20ano/1%C2%BA%20semestre/Bases%20de%20Dados/README.md">Bases de Dados</a></td>
         <td></td>
         <td><a>Linguagens e Tecnologias Web</a></td>
     </tr>

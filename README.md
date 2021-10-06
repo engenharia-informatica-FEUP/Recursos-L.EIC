@@ -58,7 +58,7 @@
         <td>F II</td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/2%C2%BA%20ano/1%C2%BA%20semestre/F%C3%ADsica%20II/README.md">Física II</a></td>
         <td>ME</td>
-        <td><a>Métodos Estatísticos</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/2%C2%BA%20ano/2%C2%BA%20semestre/M%C3%A9todos%20Estat%C3%ADsticos/README.md">Métodos Estatísticos</a></td>
     </tr>
     <tr>
         <td>BD</td>

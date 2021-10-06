@@ -15,7 +15,5 @@
 
 * [Fichas](Fichas)
 
-* [Rapid miner - pequeno tutorial](https://www.youtube.com/watch?v=0huOX7dj96s&feature=youtu.be)
-
 * Exemplos de projectos:
   * [Previsão de novos comentários](https://github.com/xico2001pt/feup-mest/blob/main/Grupo7D.pdf)

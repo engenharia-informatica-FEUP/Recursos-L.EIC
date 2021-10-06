@@ -120,7 +120,7 @@
     </tr>
     <tr>
         <td>RC</td>
-        <td><a>Redes de Computadores</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/3%C2%BA%20ano/1%C2%BA%20semestre/Redes%20de%20Computadores/README.md">Redes de Computadores</a></td>
         <td>CPD</td>
         <td><a>Computação Paralela e Distribuída</a></td>
     </tr>

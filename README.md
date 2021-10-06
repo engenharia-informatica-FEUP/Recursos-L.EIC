@@ -74,7 +74,7 @@
     </tr>
     <tr>
         <td>AED</td>
-        <td><a>Algoritmos e Estruturas de Dados</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/2%C2%BA%20ano/1%C2%BA%20semestre/Algoritmos%20e%20Estruturas%20de%20Dados/README.md">Algoritmos e Estruturas de Dados</a></td>
         <td>DA</td>
         <td><a>Desenho de Algoritmos</a></td>
     </tr>

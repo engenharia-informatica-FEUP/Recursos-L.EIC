@@ -1,0 +1,3 @@
+- Testes em main.cpp
+- Depois de entrar no projeto no CLion, fazer Reload CMake Project (botão esquerdo do rato em CMakeLists.txt)
+- Na alínea e, descomentar a parte do teste da exceção para testar, mas depois comentar outra vez para não interferir com os outros testes

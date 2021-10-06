@@ -1,0 +1,2 @@
+- Testes em main.cpp
+- Depois de entrar no projeto no CLion, fazer Reload CMake Project (botão esquerdo do rato em CMakeLists.txt)

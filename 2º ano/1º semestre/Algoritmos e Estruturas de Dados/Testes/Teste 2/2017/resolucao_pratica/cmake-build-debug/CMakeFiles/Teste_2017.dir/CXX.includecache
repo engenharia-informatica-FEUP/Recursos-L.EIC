@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Tiago/Desktop/Prep Teste 2/Teste 2017/Doctor.h
+string
+-
+queue
+-
+
+C:/Users/Tiago/Desktop/Prep Teste 2/Teste 2017/Hospital.cpp
+Hospital.h
+C:/Users/Tiago/Desktop/Prep Teste 2/Teste 2017/Hospital.h
+algorithm
+-
+stack
+-
+iostream
+-
+
+C:/Users/Tiago/Desktop/Prep Teste 2/Teste 2017/Hospital.h
+list
+-
+stack
+-
+Doctor.h
+C:/Users/Tiago/Desktop/Prep Teste 2/Teste 2017/Doctor.h
+

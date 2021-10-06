@@ -1,0 +1,152 @@
+http://beta.primarypad.com/p/inkRwpQMUc 
+
+(Deixem ficar aqui tb para o pessoal que não tiver net poder aceder
+também ao que já estiver feito, na ultima vez que tinham vindo a net)
+
+Parte 1
+
+1.	C) (slides physical layer – pag.11) - tens a certeza? 2*100*log2(4) = 400 e não 200.Nos slides diz que o 2B é o baudrate, por isso o 100 acho que ja inclui o 2*. - É capaz, é...
+2.	D) (não tenho a certeza) (alguem pode ver esta?)
+3.	D) (como já recebeu 3 tramas diferentes, não deveria ter recebido uma quarta trama) - se fores ver aos slides, vês que o Selective-Repeat armazena tramas recebidas fora de ordem.
+		Mas tb diz que só recebe tramas até W, e ali como o W = 3, já não vai aceitar o I(3)
+		Mas então a Window também funciona com ordem? Não é w=3, sejam eles quais forem?
+		ah?
+		Tipo, w=3...e esses 3 têm de ser ordenados?
+		isso já não, pork é selective repeat acho
+		Mas se tu vires bem, o I(3) é o terceiro a chegar, logo está dentro da window.
+		é o quarto, não te esqueças do I(0)
+		I(0), I(1) e I(3)...o I(2) não foi enviado ou não chegou, logo ele recebeu 3.
+		afinal tens razão é a D assim
+4.	A) (slides medium access control pag. 16)
+(a 5,6 e 7 foram corrigidas pelo prof, agora pork não sei)
+5.	D) (slides medium access control pag. 35) - não estás a confundir um HUB com um Switch? Pelos slides pareceu-me que fazia isso tb. - Epá, eu acho que elimina, mas realmente nos slides não diz nada. É possível que faça flood, não sei. -- Flood manda para todas as portas excepto por onde recebeu. O mecanismo é o mesmo independentemente de ser hub ou switch.
+6.	A) (ou a b) ou a a) slides médium access control – final)
+7.	B) - sinceramente acho que aqui é a D, visto que o endereço de destino não pertence a nenhuma das redes mencionadas. Mas tá entre os endereços da porta 1 e da 2, logo deve pertencer a porta 1 - epá, não é bem assim... na minha opinião, é descartado, mas a ir é, de facto, para a 1, visto que a máscara é de 16 bits apenas, logo, em princípio, dá até 129.33.255.255...acho eu. - Pensando melhor...acho que o endereço 129.33.195.33 se enquadra na rede da porta 1. Logo, a resposta A está certa.
+8.	B) (slides network layer pag.53)
+9.	D) (slides transport layer)
+10.	 C) (slides shortest paths in networks pag. 30)
+	
+
+
+Parte 2
+
+1)	A) M = 8 => W = 7
+A = Tprop/Tf = 0,25/0,004 = 62,5
+Tprop = 250 ms = 0,25 s
+Tf = L/R = (256*8)/(512*10^3) = 0,004 s
+
+1 + 2a = 126
+W < 1+2a -> S = W/(1+2a) = 7 / 126 ~= 0.06 =6%
+Dm = R*S = 512*0.06 = 30.75 kbits/s
+
+Pe = FER = 1-(1-BER)^n=1-(1-10^-4)^(256*8) ~= 0.185
+
+S = W(1-pe)/((1+2a)(1-pe+Wpe)) ~= 0.02%
+Dm = R*S = 512*0.02 = 10.24 kbits/s
+
+b)   Smax -> W >= 1+2a -> S = 1 = 100%
+1+2a = 126 
+W = M-1 -> M = 2^k -> M = 128 -> W = 127 >= 1 + 2a
+S = W(1-pe)/((1+2a)(1-pe+Wpe)) = 127(1-0.185)/(126*(1-0.185+127*0.185)) ~= 0.034 =3.4%
+
+c)  M = 128 -> W = 64 
+para S = 1 -> W >= 1+2a -> 64 > 1+2*Tprop/Tf
+Reduziria Tprop para metade ou Tf para metade.
+Para reduzir o Tf para metade podia-se diminuir o tamanho da trama para metade ou a capacidade.
+
+2)	C = 10 Mbit/s = 10^7 bit/s    R = 1000 pacote/s = 1000 *1000*8 = 8*10^6 bit
+M/M/1    L = 8*1000 = 8000 bit
+
+a)	Intensidade(p) = lambda/u = 0.8
+Lambda = R/L = (8*10^6)/(8*10^3) = 1000
+u = C/L = 10^7/(8*10^3) = 1250
+Nw = N – p = 4-0.8 = 3.2
+N = p/(1-p) = 4
+T=1/(u-lambda) = 1/(1250-1000) = 0.004 s = 4 ms
+
+b)	
+L1 = 2000*8 = 16000 bit   L2 = 4000*8 = 32000   R = 8*10^6 bit
+Lambda1 = R/L1 = 8*10^6/(16*10^3) = 500
+Lambda2 = R/L2 = 8*10^6/(32*10^3) = 250
+u1 = C/L1 = 10^7/(16*10^3) = 625
+u2 = C/L2 = 10^7/(32*10^3) = 312.5
+p1 = 500/625 = 0.8
+p2 = 250/312.5 = 0.8
+N1 = 4
+N2 = 4
+Nw1 = 3.2
+Nw2 = 3.2
+T1 = 1/(625-500) = 0.008 = 8ms
+T2 = 1/(312.5-250) = 0.016 = 16ms
+
+O tamanho dos pacotes apenas vai influenciar o tempo médio de atraso, ou seja, a única vantagem que reduzir o tamanho traz é diminuir o tempo de atraso.
+
+
+c)	Tempo mínimo = T = 4 ms
+Tempo máximo = T * 4 = 16 ms
+Tempo médio = (T+T*2+T*3+T*4)/4 = 10 ms
+
+-> Alguém me consegue explicar esta 2-c)?
+
+O tempo mínimo é o tempo que médio que um pacote demora, ou seja, da primeira porta.
+O tempo maximo é esse vezes quatro, por serem quatro portas.
+O médio é a media dos dois.
+
+Ok, o raciocinio é este. Mas fui falar com o prof. Manuel Ricardo e vi as soluções. O tempo mínimo que ele tinha era 0.8. Não faço ideia porquê.
+Nao sera
+
+
+-----------------------------------------------------------------------------------------------------
+Se alguém pudesse explicar como se resolver este grupo 3 era fixe :p
+ya xD
+
+3)
+a)	quem fez este podia explicar pork é assim?
+
+	172.9.10.96/28	172.9.10.64/30
+	172.9.10.111	172.9.10.68
+	16		4
+	
+b)	R2.eth0 -> não sei
+	R2.eth1 -> 172.9.10.0 (não tenho a certeza)
+
+c)	(não tenho a certeza de como se faz isto)
+
+Destino (endereço/máscara)	Gateway		Interface
+
+>> Acho que isto ta tudo mal. <<
+
+A minha resolução para este problema seria a seguinte (várias são possíveis):
+
+--> podes explicar pork?
+a) VLAN1:
+	Subrede: 172.9.10.13/28
+	Broadcast: 172.9.10.29
+	Número de interfaces: 14 hosts + os endereços de subrede e broadcast.
+
+   VLAN2:
+	Subrede: 172.9.10.4/29
+	Broadcast: 172.9.10.12 (nao sera .11? do .4 até ao .12 são 9 endereços)
+	Número de interfaces: 6 hosts + os endereços de subrede e broadcast.
+		
+
+Metam as cenas no pirate pad gente. Lá expliquei porque é que a primeira solução está mal.
+Entretanto, a minha solução.
+a) 
+        172.9.10.4/28    172.9.10.20/29
+        172.9.10.19       172.9.10.27
+        16                        8
+
+b)
+ R2.eth0 -> 172.9.10.5/27 pelos lulos, este não garanto, mas está na rede da vlan1 e a netmask abrange ambas as redes - Na minha opinião, devia ser um endereço independente de qlq das vlans...logo, por exemplo, 172.9.10.3, visto que o que foi usado pertence à vlan 1 e este está disponível.
+ R2.eth1 -> 172.9.10.1/30
+		
+c)
+
+
+Destino (CIDR)			interface	gateway
+172.9.10.32/27                     eth0        
+172.9.10.4/28                       eth1            172.9.10.2
+172.9.10.20/29                       eth1            172.9.10.2
+0.0.0.0/0                            eth2            200.1.1.1 (sem certezas)
+

@@ -30,7 +30,7 @@
         <td>MD</td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/1%C2%BA%20ano/1%C2%BA%20semestre/Matem%C3%A1tica%20Discreta/README.md">Matemática Discreta</a></td>
         <td>TC</td>
-        <td><a>Teoria da Computação</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/1%C2%BA%20ano/2%C2%BA%20semestre/Teoria%20da%20Computa%C3%A7%C3%A3o/README.md">Teoria da Computação</a></td>
     </tr>
     <tr>
         <td>FP</td>

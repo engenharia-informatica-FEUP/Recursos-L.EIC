@@ -1,5 +1,5 @@
 # AED - Algoritmos e Estruturas de Dados
-* É uma cadeira de programção, por isso envolve muita prática e estar a par da matéria.
+* É uma cadeira de programação, por isso envolve muita prática e estar a par da matéria.
 
 ## Recursos
 * [Ficha da UC](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=484404)

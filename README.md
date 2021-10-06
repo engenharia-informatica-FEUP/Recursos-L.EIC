@@ -64,7 +64,7 @@
         <td>BD</td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/2%C2%BA%20ano/1%C2%BA%20semestre/Bases%20de%20Dados/README.md">Bases de Dados</a></td>
         <td>LTW</td>
-        <td><a>Linguagens e Tecnologias Web</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/2%C2%BA%20ano/2%C2%BA%20semestre/Linguagens%20e%20Tecnologias%20Web/README.md">Linguagens e Tecnologias Web</a></td>
     </tr>
     <tr>
         <td>LDTS</td>

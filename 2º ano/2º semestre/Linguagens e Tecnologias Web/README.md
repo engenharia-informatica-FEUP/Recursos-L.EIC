@@ -11,7 +11,7 @@
   
 * [Formulários de consulta](Formulários-consulta)
   
-* [Teóricas](hhttps://drive.google.com/drive/folders/1BXJdBB5zh6f_zzEHrGgOp_cxaM_1vKKp)
+* [Teóricas](https://drive.google.com/drive/folders/1BXJdBB5zh6f_zzEHrGgOp_cxaM_1vKKp)
   
 * [HTML Tables generator](https://www.tablesgenerator.com/html_tables)
   

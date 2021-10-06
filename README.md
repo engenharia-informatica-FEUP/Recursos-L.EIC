@@ -29,19 +29,19 @@
     <tr>
         <td>MD</td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/1%C2%BA%20ano/1%C2%BA%20semestre/Matem%C3%A1tica%20Discreta/README.md">Matemática Discreta</a></td>
-        <td></td>
+        <td>TC</td>
         <td><a>Teoria da Computação</a></td>
     </tr>
     <tr>
         <td>FP</td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/1%C2%BA%20ano/1%C2%BA%20semestre/Fundamentos%20da%20Programa%C3%A7%C3%A3o/README.md">Fundamentos da Programação</a></td>
-        <td></td>
+        <td>P</td>
         <td><a>Programação</a></td>
     </tr>
     <tr>
         <td>FSC</td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/1%C2%BA%20ano/1%C2%BA%20semestre/Fundamentos%20de%20Sistemas%20Computacionais/README.md">Fundamentos de Sistemas Computacionais</a></td>
-        <td></td>
+        <td>AC</td>
         <td><a>Arquitectura de Computadores</a></td>
     </tr>
 </table>
@@ -63,7 +63,7 @@
     <tr>
         <td>BD</td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/2%C2%BA%20ano/1%C2%BA%20semestre/Bases%20de%20Dados/README.md">Bases de Dados</a></td>
-        <td></td>
+        <td>LTW</td>
         <td><a>Linguagens e Tecnologias Web</a></td>
     </tr>
     <tr>

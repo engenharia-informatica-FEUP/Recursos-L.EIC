@@ -68,7 +68,7 @@
     </tr>
     <tr>
         <td>LDTS</td>
-        <td><a>Laboratório de Desenho e Teste de Software</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/2%C2%BA%20ano/1%C2%BA%20semestre/Laborat%C3%B3rio%20de%20Desenho%20e%20Teste%20de%20Software/README.md">Laboratório de Desenho e Teste de Software</a></td>
         <td>ES</td>
         <td><a>Engenharia de Software</a></td>
     </tr>

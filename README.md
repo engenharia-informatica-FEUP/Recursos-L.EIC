@@ -42,7 +42,7 @@
         <td>FSC</td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/1%C2%BA%20ano/1%C2%BA%20semestre/Fundamentos%20de%20Sistemas%20Computacionais/README.md">Fundamentos de Sistemas Computacionais</a></td>
         <td>AC</td>
-        <td><a>Arquitectura de Computadores</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/1%C2%BA%20ano/2%C2%BA%20semestre/Arquitectura%20de%20Computadores/README.md">Arquitectura de Computadores</a></td>
     </tr>
 </table>
 

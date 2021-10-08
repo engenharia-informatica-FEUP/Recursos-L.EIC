@@ -4,18 +4,16 @@
 ## Recursos
 * [Ficha da UC](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=484424)
   
-* [Apontamentos]()
+* [Apontamentos](https://drive.google.com/drive/folders/1QjqzgzgIOP2VqPY-oZvjQvMVUdrZUfi6)
   
-* [Teóricas]()
+* [Teóricas](https://drive.google.com/drive/folders/1W_manVvUfuU7TJG40cD_TO7KMaPRm-4d)
   
 * [Exames](Exames)
   
 * [Resolução exames](https://github.com/PedroJSilva2001/FEUP-CAL/tree/main/exams)
   
 * [Resumos](https://github.com/pedromsfernandes/ResumosMIEIC/blob/master/2Ano/CAL/CAL_resumos.pdf)
-  
-* [Teórico-Práticas com soluções]()
-  
+    
 * [Kahoot!](Kahoots/README.md)
   
 * Exemplos de projectos:

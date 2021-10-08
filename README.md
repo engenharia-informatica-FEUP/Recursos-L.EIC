@@ -116,7 +116,7 @@
         <td>FSI</td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/3%C2%BA%20ano/1%C2%BA%20semestre/Fundamentos%20de%20Seguran%C3%A7a%20Inform%C3%A1tica/README.md">Fundamentos de Segurança Informática</a></td>
         <td>C</td>
-        <td><a>Compiladores</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/3%C2%BA%20ano/2%C2%BA%20semestre/Compiladores/README.md">Compiladores</a></td>
     </tr>
     <tr>
         <td>RC</td>

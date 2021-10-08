@@ -91,6 +91,30 @@
         <td>UMADDL xd, wn, wm, xa </td>
         <td><a href="#Unsigned-multiply-and-add-long">Explanation</a></td>
     </tr>
+    <tr>
+        <td>Unsigned multiply and sub long</td>
+        <td>UMSUBL</td>
+        <td>UMSUBL xd, wn, wm, xa </td>
+        <td><a href="#Unsigned-multiply-and-sub-long">Explanation</a></td>
+    </tr>
+    <tr>
+        <td>Unsigned multiply and neg long</td>
+        <td>UMNEGL</td>
+        <td>UMNEGL xd, wn, wm </td>
+        <td><a href="#Unsigned-multiply-and-neg-long">Explanation</a></td>
+    </tr>
+    <tr>
+        <td>Signed multiply and add long</td>
+        <td>SMADDL</td>
+        <td>SMADDL xd, wn, wm, xa </td>
+        <td><a href="#Signed-multiply-and-add-long">Explanation</a></td>
+    </tr>
+    <tr>
+        <td>Signed multiply and sub long</td>
+        <td>SMSUBL</td>
+        <td>SMSUBL xd, wn, wm, xa </td>
+        <td><a href="#Signed-multiply-and-sub-long">Explanation</a></td>
+    </tr>
 </table>
 
 ## Addition
@@ -198,4 +222,28 @@ onde C é a "carry flag"
 * multiplica dois registos de 32 bits (wn e wn) produzindo um resultado com 64 bits
 * soma esse resultado com outro registo de 64 bits e coloca o resultado dessa soma em xd
 
+## Unsigned multiply and sub long 
+> UMSUBL xd, wn, wm, xa
 
+    xd = xa - (wm * wn)
+
+* multiplica dois registos de 32 bits (wn e wn) produzindo um resultado com 64 bits
+* subtrai esse resultado com outro registo de 64 bits e coloca o resultado dessa subtração em xd
+
+## Unsigned multiply and neg long 
+> UMNEGL xd, wn, wm
+
+    xd = -(wm * wn)
+
+* multiplica dois registos de 32 bits (wn e wn) produzindo um resultado com 64 bits
+* nega esse resultado e coloca-o em xd
+
+## Signed multiply and add long 
+> SMADDL xd, wn, wm, xa
+
+    xd = xa + (wm * wn)
+
+## Signed multiply and sub long 
+> SMADDL xd, wn, wm, xa
+
+    xd = xa - (wm * wn)

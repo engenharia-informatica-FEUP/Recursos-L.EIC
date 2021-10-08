@@ -1,4 +1,4 @@
-# LCOM - Laboratório de Computadores
+# LC - Laboratório de Computadores
 * A estratégia para esta cadeira é estudar bem e pormenorizadamente os conteúdos dos slides e enunciados dos trabalhos. Apesar de o professor escrever muita informação, quando se organiza bem acaba por ser bastante simples. 
 * **NOTA:** os testes fornecidos aqui não foram fornecidos pelos professores. Logo, alerta-se para que não tirem dúvidas sobre estes com eles, uma vez que estes podem ser mais tarde reutilizados. 
 

@@ -1,4 +1,4 @@
-# Laboratório de Bases de Dados e Aplicações Web
+# LBD - Laboratório de Bases de Dados e Aplicações Web
 
 ## Recursos
 * [Ficha da UC](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=484433)

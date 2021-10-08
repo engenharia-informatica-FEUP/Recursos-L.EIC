@@ -1,4 +1,4 @@
-# Física 2
+# F II - Física 2
 
 ## Recursos
 * [Ficha da UC](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=484406)

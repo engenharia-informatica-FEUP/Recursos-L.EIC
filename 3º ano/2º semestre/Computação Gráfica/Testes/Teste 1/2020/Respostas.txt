@@ -1,0 +1,35 @@
+Respostas:
+
+P1. B, D, E
+
+P2. I(A) = 10
+
+P3. I(B) = 6 + 2*sqrt(2)
+
+P4. I(C) = I(E)
+
+P5. I(C) < I(D)
+
+P6. H
+
+P7. A -> 99
+    B -> 110
+    C -> 121
+    D -> 44
+    E -> 49.5
+    F -> 55
+
+P8. Visibilidade
+
+P9. Usado de forma especial, é possível utilizá-lo com várias fontes de luz
+
+P10. Um pixel da imagem (em abstracto, de forma quadrada) projecta-se numa área quadrangular não quadrada no espaço uv da textura
+
+P11. a
+
+P12. b
+
+P13. A -> GB
+     B -> B
+     C -> (nada)
+     D -> R

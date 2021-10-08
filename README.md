@@ -98,7 +98,7 @@
         <td>IPC</td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/3%C2%BA%20ano/1%C2%BA%20semestre/Intera%C3%A7%C3%A3o%20Pessoa%20Computador/README.md">Interação Pessoa Computador</a></td>
         <td>CG</td>
-        <td><a>Computação Gráfica</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/3%C2%BA%20ano/2%C2%BA%20semestre/Computa%C3%A7%C3%A3o%20Gr%C3%A1fica/README.md">Computação Gráfica</a></td>
     </tr>
     <tr>
         <td>LBD</td>

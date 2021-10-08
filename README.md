@@ -104,7 +104,7 @@
         <td>LBD</td>
         <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/3%C2%BA%20ano/1%C2%BA%20semestre/Laborat%C3%B3rio%20de%20Bases%20de%20Dados%20e%20Aplica%C3%A7%C3%B5es%20Web/README.md">Laboratório de Bases de Dados e Aplicações Web</a></td>
         <td>CPD</td>
-        <td><a>Computação Paralela e Distribuída</a></td>
+        <td><a href="https://github.com/engenharia-informatica-FEUP/Recursos-L.EIC/blob/main/3%C2%BA%20ano/2%C2%BA%20semestre/Computa%C3%A7%C3%A3o%20Paralela%20e%20Distribu%C3%ADda/README.md">Computação Paralela e Distribuída</a></td>
     </tr>
     <tr>
         <td>PFL</td>

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "npuzzleiart",
+  "private_key_id": "299c70954b18263c71cd401fdf8a12a35ec19b6e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCc5/PN3wL46j5u\nyyAIWkC3gHdoJQw/cZKh4d2QJ8csf3zPXEmozvQVGfNPVHC1cuMbn1QNDpD6winY\nB9plW3J/5zxMetnw8L58kCZih5HM7oKYxqSGOr7AUWvMI/ucx27imDkK9bU+TjPf\nSXYfDhHhbKDHVX4ZZbxU+EWscoGBg5UPT0x/y0g0N6atui922dDeU3T12DDImdhm\nnWFRyD7G95o87F/lujRSSchjDeq22+nc+ecPYN5t8kn3rw/tWV4OHwkTUvrV1Rah\n9GhOm0aoeAyfrT8QxIp4t6tru8sJTVbOifJD4s746TRhEd60+ICiPcF+O4Z0z+pl\nf+bFlk3fAgMBAAECggEAFhW95s3LhM6vv/d+SD6v2kROSk3gpfNt8LQyc+5tZfGB\n10wFoCmVCH1RFmrrvFZx6frooTfaJzl6G0qrrlWLTb516cvm7jdskGrXxEmRt5cg\nsbFQCgatv7MWKbMs4LnffSxw5v6DpsPqIDUeV6uqz6BzFuuNJrT/p7QUVnv9h4WN\nyx/WIacrabUcJP+IJvxM9yC/ow73anPbsiByAAVa0ce4mvLCmAAeGY9OGSStcVEa\nc2frmyD5yYbuKlNSIBSNyv/AjGQFxRH4HMMghGGMk6uc2OmQnvpCwjzd6NGKz2Cf\n68ai0neSl9uCwrMqo9zna96nFbjwXUgQzOoj2qw1LQKBgQDUaporOA0OTad02ljM\nEQUEg6jyDPWRx1r7LVayuPdbHST9O9IA/t6eE3CV+N20MZsPzCjGhmHoGpA3dwO8\noCKYcZg3jK69vrTIOpn2Htz8iSjoL580fEGv4PxAVUoa7Afmdhi3B+i9Ur3294I3\nemJeN9oFVe1x6n3p9VrLvx5FiwKBgQC9GZwo6ZJSBUxUrfAV9/1KQQDTwdXFxuOV\nRtC0N7qfY6Zy6dYnmSxtHKHzqyYGiYMTMXwborEz8wkNQ6R/7gv3uvvAPwn5Qu0n\nZ834eqUFuJC4YkdAY/K3Y5wqTxZvaZBVbboFy2q6LRjdWzACgUUhve97fATP46D3\n4IdwHmArfQKBgC5+mvpEzY7I7pOES5V3UDrZurwonAPpt/9swCJknDgEXBlV47S2\nFPJS3PzmuVh81y0RCgfSWFHeppyNX3MFNi1aB/B4ybLcsGN3eEXIIaThPOP9sIJj\nhFlEDNLkGFFmQqBuTyCZCZePKeeJ66XLEwb+gKlUUqHxqtfwDYy1a6HbAoGAG+zC\nQNBtSSt7IC4nfDcI8oQy6RKAzRoX1Z2FiHeKWatPkzyw4VwfUWWfDOrDTMfV0WnH\nWBVocbF8LrdEfZfbsJOuRa+Je4PEncMYiY8i+3tL886fkwSvfSF6mEzhlUZTiCoS\nBHULp76tI1Mp/dS1LsxrpyKjW0fUJ4bCuW3i6ckCgYApR5VsIzDY2pkEDIgUXor6\nZWGzH21cxasEUWVthw+dvXrVHLW4upwyw98JINIRVSKO4su1oiMWvCP+Ku3u97T8\n5K2PL+l/kiTuhkrJWcuJVKWiyTrZZ+qkzz8oe4Yi0stey+eSCW6ldTtsOO/O+kDZ\nryIWm1nHem/lfRuFvmAevw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "npuzzleiart@npuzzleiart.iam.gserviceaccount.com",
+  "client_id": "110955970687211224742",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/npuzzleiart%40npuzzleiart.iam.gserviceaccount.com"
+}

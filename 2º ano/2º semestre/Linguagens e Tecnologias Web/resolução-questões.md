@@ -11,13 +11,17 @@
 > O facto de existirem diferentes navegadores web, apesar de permitir um maior nível de liberdade de escolha por parte dos utilizadores e uma aumento de competitividade, tornam o trabalho dos desenvolvedores de aplicações web mais complicado, uma vez que a portabilidade do código entre os vários browsers (e até mesmo entre várias versões do mesmo browser) diminui. O desenvolvedor tem de ou certificar-se que o seu código funciona em qualquer browser ou aceitar que não funcionará em qualquer browser. 
 
 3. Porque há menos variedade de servidores que clientes web?
-2. Qual é a questão de existirem várias tecnologias web distintas?
-3. Para que servem as anotações no HTML?
-4. Para ser um sistema de hipertexto descentralizado, de que prescindiu o WWW?
-5. Que anotações do HTML possibilitam o hipertexto?
-6. Porque os URLs fazem da web um sistema de hipertexto global?
-7.  Os URLs servem apenas para hipertexto?
-8.  Para que serve uma declaração de tipo num documento HTML?
-9.  Quais os constituintes estruturais do HTML?
-10. Que tipos de valores guardam os atributos?
-11. Para que serve um contentor?
+> Um servidor tem a capacidade de armazenar imensos dados de vários clientes e, por isso, serve vários clientes web. Assim, não há necessidade de muita variedade. 
+
+4. Qual é a questão de existirem várias tecnologias web distintas?
+> Há várias tecnologias web distintas, como o HTML, CSS, HTTP, JavaScript, pois cada tecnologia serve um propósito diferente numa página web. O HTML permite colocar conteúdo na web, o CSS permite estilizar esse conteúdo e o JavaScript permite adiconar elemntos interativos a uma página web. Já para cada tecnologia há várias versões diferentes, como o HTML e o XHTML ou JavaScript e Node.js. Isto permite a evolução das mesmas. Um desenvolvedor diferente pode encontrar novas funcionalidades e formar uma nova versão. Ou o mesmo desenvolvedor pode encontrar bugs e, mais uma vez, formar uma nova versão.
+
+5. Para que servem as anotações no HTML?
+6. Para ser um sistema de hipertexto descentralizado, de que prescindiu o WWW?
+7. Que anotações do HTML possibilitam o hipertexto?
+8. Porque os URLs fazem da web um sistema de hipertexto global?
+9.  Os URLs servem apenas para hipertexto?
+10. Para que serve uma declaração de tipo num documento HTML?
+11. Quais os constituintes estruturais do HTML?
+12. Que tipos de valores guardam os atributos?
+13. Para que serve um contentor?

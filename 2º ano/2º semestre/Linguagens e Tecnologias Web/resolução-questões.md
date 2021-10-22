@@ -3,7 +3,9 @@
 
 ## HTML
 1. De que forma o modelo cliente-servidor condiciona a web?
-> ncjdcn
+> O modelo cliente-servidor consiste numa parte ativa, o cliente, que pede recursos ao servidor e processa, posteriormente, esses mesmos recursos e uma parte passiva, o servidor, que recebe os pedidos do cliente e fornece os recursos. 
+> <br>
+> Este modelo conficiona a web no sentido em que permitem um maior nível de segurança e de uso, uma vez que os dados são armazenados nos servidores, que geralmente possuem mecanismos de segurança mais eficazes que as dos clientes. Os servidores podem controlar melhor o acesso a recursos, para garantir que apenas os clientes com credenciais válidas possam aceder e alterar os dados. Por outro lado, um servidor poderá ficar sobrecarregado caso receba mais pedidos dos clientes do que aqueles que pode suportar.
 2. Qual é o impacto de haverem diferentes navegadores web?
 > CMAKE_DEPENDS_CHECK_CXX
 > cmdjken

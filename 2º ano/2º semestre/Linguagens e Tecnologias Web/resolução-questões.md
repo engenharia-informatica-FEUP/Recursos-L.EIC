@@ -5,18 +5,19 @@
 1. De que forma o modelo cliente-servidor condiciona a web?
 > O modelo cliente-servidor consiste numa parte ativa, o cliente, que pede recursos ao servidor e processa, posteriormente, esses mesmos recursos e uma parte passiva, o servidor, que recebe os pedidos do cliente e fornece os recursos. 
 > <br>
-> Este modelo conficiona a web no sentido em que permitem um maior nível de segurança e de uso, uma vez que os dados são armazenados nos servidores, que geralmente possuem mecanismos de segurança mais eficazes que as dos clientes. Os servidores podem controlar melhor o acesso a recursos, para garantir que apenas os clientes com credenciais válidas possam aceder e alterar os dados. Por outro lado, um servidor poderá ficar sobrecarregado caso receba mais pedidos dos clientes do que aqueles que pode suportar.
+> Este modelo conficiona a web no sentido em que permite um maior nível de segurança e de uso, uma vez que os dados são armazenados nos servidores, que geralmente possuem mecanismos de segurança mais eficazes que as dos clientes. Os servidores podem controlar melhor o acesso a recursos, para garantir que apenas os clientes com credenciais válidas possam aceder e alterar os dados. Por outro lado, um servidor poderá ficar sobrecarregado caso receba mais pedidos dos clientes do que aqueles que pode suportar.
+
 2. Qual é o impacto de haverem diferentes navegadores web?
-> CMAKE_DEPENDS_CHECK_CXX
-> cmdjken
+> O facto de existirem diferentes navegadores web, apesar de permitir um maior nível de liberdade de escolha por parte dos utilizadores e uma aumento de competitividade, tornam o trabalho dos desenvolvedores de aplicações web mais complicado, uma vez que a portabilidade do código entre os vários browsers (e até mesmo entre várias versões do mesmo browser) diminui. O desenvolvedor tem de ou certificar-se que o seu código funciona em qualquer browser ou aceitar que não funcionará em qualquer browser. 
+
 3. Porque há menos variedade de servidores que clientes web?
-4. Qual é a questão de existirem várias tecnologias web distintas?
-5. Para que servem as anotações no HTML?
-6. Para ser um sistema de hipertexto descentralizado, de que prescindiu o WWW?
-7. Que anotações do HTML possibilitam o hipertexto?
-8. Porque os URLs fazem da web um sistema de hipertexto global?
-9.  Os URLs servem apenas para hipertexto?
-10. Para que serve uma declaração de tipo num documento HTML?
-11. Quais os constituintes estruturais do HTML?
-12. Que tipos de valores guardam os atributos?
-13. Para que serve um contentor?
+2. Qual é a questão de existirem várias tecnologias web distintas?
+3. Para que servem as anotações no HTML?
+4. Para ser um sistema de hipertexto descentralizado, de que prescindiu o WWW?
+5. Que anotações do HTML possibilitam o hipertexto?
+6. Porque os URLs fazem da web um sistema de hipertexto global?
+7.  Os URLs servem apenas para hipertexto?
+8.  Para que serve uma declaração de tipo num documento HTML?
+9.  Quais os constituintes estruturais do HTML?
+10. Que tipos de valores guardam os atributos?
+11. Para que serve um contentor?

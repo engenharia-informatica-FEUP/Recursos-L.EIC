@@ -1,7 +1,7 @@
 # Questões
 * Questões propostas nas aulas teóricas.
 * Ver [aqui](resolução-questões.md) uma possível resolução. 
-* Nota: o exame será completamente de escolha múltipla, pelo que o único propósito destas questões é para estudo e consolidação da matéria. Portanto, recomneda-se que tentem mesmo responder às questões antes de ver a resolução. 
+* Nota: o exame será completamente de escolha múltipla, pelo que o único propósito destas questões é para estudo e consolidação da matéria. Portanto, recomenda-se que tentem mesmo responder às questões antes de ver a resolução. 
 
 ## HTML
 1. De que forma o modelo cliente-servidor condiciona a web?

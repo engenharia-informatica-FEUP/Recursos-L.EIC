@@ -17,6 +17,10 @@
 > Há várias tecnologias web distintas, como o HTML, CSS, HTTP, JavaScript, pois cada tecnologia serve um propósito diferente numa página web. O HTML permite colocar conteúdo na web, o CSS permite estilizar esse conteúdo e o JavaScript permite adiconar elemntos interativos a uma página web. Já para cada tecnologia há várias versões diferentes, como o HTML e o XHTML ou JavaScript e Node.js. Isto permite a evolução das mesmas. Um desenvolvedor diferente pode encontrar novas funcionalidades e formar uma nova versão. Ou o mesmo desenvolvedor pode encontrar bugs e, mais uma vez, formar uma nova versão.
 
 5. Para que servem as anotações no HTML?
+> Em HTML, as anotações são uma espécie de comandos, ordens em relação à forma como deve ser formatado o texto.
+> <br>
+> Por exemplo, a anotação < br > indica ao compilador que este deve introduzir um quebra de linha no texto. 
+
 6. Para ser um sistema de hipertexto descentralizado, de que prescindiu o WWW?
 7. Que anotações do HTML possibilitam o hipertexto?
 8. Porque os URLs fazem da web um sistema de hipertexto global?

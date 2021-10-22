@@ -13,7 +13,7 @@
   
 * [Teóricas](https://drive.google.com/drive/folders/1BXJdBB5zh6f_zzEHrGgOp_cxaM_1vKKp)
   
-* [Questões](): Questões propostas nas aulas teóricas.
+* [Questões](questões.md): Questões propostas nas aulas teóricas.
   
 * [HTML Tables generator](https://www.tablesgenerator.com/html_tables)
   

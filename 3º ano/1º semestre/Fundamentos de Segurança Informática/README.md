@@ -9,6 +9,8 @@
   
 * [Exames](Exames)
   
+* [Resumos](https://docs.google.com/document/d/1VEjE-EULZ3uvkvS2rFikSDVH__Vu-M3CdA5lBX84pLU/edit?usp=sharing): Em construção. Podem contribuir nos comentários ou enviando um mail para a organização. 
+  
 * Websites:
   * http://cseweb.ucsd.edu/classes/wi21/cse127-a/
   * http://cseweb.ucsd.edu/classes/fa18/cse127-a/index.html

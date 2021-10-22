@@ -19,7 +19,7 @@
 5. Para que servem as anotações no HTML?
 > Em HTML, as anotações são uma espécie de comandos, ordens em relação à forma como deve ser formatado o texto.
 > <br>
-> Por exemplo, a anotação &lt<br&gt> indica ao compilador que este deve introduzir um quebra de linha no texto. 
+> Por exemplo, a anotação <br> indica ao compilador que este deve introduzir um quebra de linha no texto. 
 
 6. Para ser um sistema de hipertexto descentralizado, de que prescindiu o WWW?
 7. Que anotações do HTML possibilitam o hipertexto?

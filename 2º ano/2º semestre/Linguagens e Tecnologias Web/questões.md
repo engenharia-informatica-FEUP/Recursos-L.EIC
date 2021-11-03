@@ -26,3 +26,9 @@
 20. As células da tabela são in-line ou block?
 21. Qual a importância dos formulários?
 22. É mesmo necessário o contentor < form >?
+
+## CSS
+1. Porquê separar o CSS do HTML?
+2. O CSS controla apenas características estáticas?
+3. O CSS é uma linguagem de programação?
+4. Qual a necessidade de desambiguar regras CSS?

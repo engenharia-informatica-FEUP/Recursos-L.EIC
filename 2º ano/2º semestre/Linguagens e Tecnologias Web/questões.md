@@ -17,3 +17,8 @@
 11. Quais os constituintes estruturais do HTML?
 12. Que tipos de valores guardam os atributos?
 13. Para que serve um contentor?
+14. Qual a importância da distinção entre em-linha e bloco na formatação?
+15. É mais rígida a estrutura de topo ou o conteúdo das páginas?
+16. Os elementos do < head > podem ser usados em < body > e vice-versa?
+17. Para que serve a declaração DOCTYPE?
+18. Porque é que é importante validar documentos HTML?

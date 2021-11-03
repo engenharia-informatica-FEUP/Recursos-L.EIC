@@ -22,3 +22,7 @@
 16. Os elementos do < head > podem ser usados em < body > e vice-versa?
 17. Para que serve a declaração DOCTYPE?
 18. Porque é que é importante validar documentos HTML?
+19. Quando (não) devem ser usadas tabelas?
+20. As células da tabela são in-line ou block?
+21. Qual a importância dos formulários?
+22. É mesmo necessário o contentor < form >?

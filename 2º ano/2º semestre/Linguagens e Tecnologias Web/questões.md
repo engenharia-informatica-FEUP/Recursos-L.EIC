@@ -32,3 +32,11 @@
 2. O CSS controla apenas características estáticas?
 3. O CSS é uma linguagem de programação?
 4. Qual a necessidade de desambiguar regras CSS?
+5. Qual é a forma preferível de embeber CSS no HTML?
+6. Porquê diferentes formas de selecionar (tipos, classes, IDs)?
+7. Para que servem o DIV e SPAN no HTML?
+8. O que no CSS é específico do HTML?
+9. Os elementos podem ter outra forma que não retangular?
+10. Quando usar unidades absolutas ou relativas?
+11. Porque há diferentes maneiras de referir cores?
+12. Para que serve a opacidade?

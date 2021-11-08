@@ -2,12 +2,23 @@
 
 ## Recursos
 * [Ficha da UC](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=484406)
+  
 * [Perguntas frequentes](https://def.fe.up.pt/faq.html)
+  
 * [Livro (em HTML)](https://def.fe.up.pt/eletricidade/)
+  
 * [Livro (em PDF)](https://drive.google.com/drive/folders/1AWfVbGFWPDtU7heRa9IBOhbvVgVfwqAQ)
+  
 * [Exercícios resolvidos (em HTML)](https://def.fe.up.pt/eletricidade/problemas.html)
+  
 * [Exercícios resolvidos (em PDF)](https://drive.google.com/drive/folders/1AWfVbGFWPDtU7heRa9IBOhbvVgVfwqAQ)
+  
 * [Formulário](Formulário.pdf)
+  
 * [Exames com solução](https://def.fe.up.pt/eletricidade/exames.html)
+  
 * [Testes](Testes)
+  
+* Vídeos youtube:
+  * [Funcionamento de uma pilha química](https://www.youtube.com/watch?v=9OVtk6G2TnQ)
 

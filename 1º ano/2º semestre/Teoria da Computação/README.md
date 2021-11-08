@@ -14,6 +14,8 @@
 
 * [Práticas](Práticas): enunciados das fichas e resoluções do professor das perguntas assinaladas
 
+* [AA - Assessment activities](AA)
+
 * [Vídeos do youtube - NesoAcademy](https://www.youtube.com/playlist?list=PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev): Aqui encontram explicações muito boas e sucintas da matéria.
 
 

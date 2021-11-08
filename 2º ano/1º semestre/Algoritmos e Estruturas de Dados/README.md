@@ -9,6 +9,8 @@
   
 * [Testes](Testes)
 
+* [Ver execução de algoritmos passo-a-passo](https://visualgo.net/pt)
+
 * Exemplos de projectos:
     * [Transportes SML 18.7/20](https://github.com/dmfrodrigues/feup-aeda-proj)
     * [StreamZ 19.50/20](https://github.com/xico2001pt/aeda-streamz)

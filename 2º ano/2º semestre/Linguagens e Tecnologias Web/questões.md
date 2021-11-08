@@ -40,3 +40,11 @@
 10. Quando usar unidades absolutas ou relativas?
 11. Porque há diferentes maneiras de referir cores?
 12. Para que serve a opacidade?
+13. Qual a diferença entre texto e tipo de letra?
+14. Estas propriedades dependem dos SOs?
+15. Qual a relação entre texto e posicionamento?
+16. Há maneira de saber o tamanho do texto?
+17. Qual é a relevância do inline-block?
+18. Qual a relação entre "display:none;" e posicionamento?
+19. Porque existem diferentes referenciais?
+20. É sempre preferível usar o flex?

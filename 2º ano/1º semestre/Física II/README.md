@@ -13,7 +13,7 @@
   
 * [Exercícios resolvidos (em PDF)](https://drive.google.com/drive/folders/1AWfVbGFWPDtU7heRa9IBOhbvVgVfwqAQ)
   
-* [Formulário](Formulário.pdf)
+* [Formulários](Formulários)
   
 * [Exames com solução](https://def.fe.up.pt/eletricidade/exames.html)
   

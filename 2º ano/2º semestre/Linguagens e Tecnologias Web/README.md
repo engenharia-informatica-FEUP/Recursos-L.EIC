@@ -14,6 +14,8 @@
 * [Teóricas](https://drive.google.com/drive/folders/1BXJdBB5zh6f_zzEHrGgOp_cxaM_1vKKp)
   
 * [Questões](questões.md): Questões propostas nas aulas teóricas.
+
+* [Resumos](https://docs.google.com/document/d/1IgF-9AdgTn2ZDTzfmZ4EbddyQGg9CgS6QmOjvqQrraw/edit?usp=sharing): Em construção; podem contribuir nos comentários
   
 * [HTML Tables generator](https://www.tablesgenerator.com/html_tables)
   

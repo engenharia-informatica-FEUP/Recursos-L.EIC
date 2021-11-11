@@ -16,6 +16,12 @@
 
 * [AA - Assessment activities](AA)
 
+* [CA - Challenge activities](CA)
+
+* [PA - Preparation activities](PA)
+
+* [Perguntas extra](Perguntas%20extras)
+
 * [Vídeos do youtube - NesoAcademy](https://www.youtube.com/playlist?list=PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev): Aqui encontram explicações muito boas e sucintas da matéria.
 
 

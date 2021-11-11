@@ -48,3 +48,8 @@
 18. Qual a relação entre "display:none;" e posicionamento?
 19. Porque existem diferentes referenciais?
 20. É sempre preferível usar o flex?
+21. Há uma diferença entre espaço e > como operador de selector de CSS?
+22. Faz sentido inserir conteúdo via CSS? Não devia ser no HTML?
+23. Há limites ao que se pode selecionar com expressões?
+24. Pode-se criar um GUI só com DIV? Quando usar outros elementos do HTML?
+25. Quando usar, ou não, flex no posicionamento?

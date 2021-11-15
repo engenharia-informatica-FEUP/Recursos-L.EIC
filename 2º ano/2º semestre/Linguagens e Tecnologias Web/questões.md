@@ -53,3 +53,11 @@
 23. Há limites ao que se pode selecionar com expressões?
 24. Pode-se criar um GUI só com DIV? Quando usar outros elementos do HTML?
 25. Quando usar, ou não, flex no posicionamento?
+
+## JavaScript
+1. Qual a diferença entre os operadores == e ===?
+2. Porque razão na declaração de variáveis o const é preferível ao let e este ao var?
+3. É melhor terminar instruções com ; ou omitir, sempre que possível?
+4. Qual a diferença entre uma função como declaração e expressão?
+5. Qual o problema de declarar uma variável depois de a usar (hoisting)?
+6. Deve-se usar sempre o modo estrito?

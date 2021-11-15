@@ -61,3 +61,7 @@
 4. Qual a diferença entre uma função como declaração e expressão?
 5. Qual o problema de declarar uma variável depois de a usar (hoisting)?
 6. Deve-se usar sempre o modo estrito?
+7. Há alguma diferença entre índices e propriedades de objetos?
+8. Listas e objetos são a mesma coisa?
+9. Quando usar mapas em vez de objetos?
+10. Qual a utilidade da notação de dados?

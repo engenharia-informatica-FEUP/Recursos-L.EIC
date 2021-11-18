@@ -65,3 +65,7 @@
 8. Listas e objetos são a mesma coisa?
 9. Quando usar mapas em vez de objetos?
 10. Qual a utilidade da notação de dados?
+11. Qual a diferença entre uma propriedade que tem uma função como valor e um método?
+12. Qual é a utilidade dos acessores nas classes do JS?
+13. Qual a diferença entre métodos estáticos e não estáticos?
+14. A orientação a objetos do JS é diferente do Java?

@@ -69,3 +69,8 @@
 12. Qual é a utilidade dos acessores nas classes do JS?
 13. Qual a diferença entre métodos estáticos e não estáticos?
 14. A orientação a objetos do JS é diferente do Java?
+15. Porque razão a reflexão de formulários deve ser evitada?
+16. A reflexão do CSS faz parte da DOM?
+17. A estrutura de objetos da DOM é uma estrutura de objetos JS?
+18. Porque razão a construção de elementos é separada da sua colocação?
+19. Quando se deve usar o innerHTML e o innerText?

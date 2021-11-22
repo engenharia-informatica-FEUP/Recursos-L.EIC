@@ -74,3 +74,7 @@
 17. A estrutura de objetos da DOM é uma estrutura de objetos JS?
 18. Porque razão a construção de elementos é separada da sua colocação?
 19. Quando se deve usar o innerHTML e o innerText?
+20. O que é distintivo na programação por eventos? 
+21. Porque há vários modos de registar "event handlers" em JS?
+22. Um mesmo elemento pode receber diferentes tipos de eventos?
+23. Qual a razão para múltiplos "event handlers" do mesmo tipo num mesmo elemento?

@@ -78,3 +78,9 @@
 21. Porque há vários modos de registar "event handlers" em JS?
 22. Um mesmo elemento pode receber diferentes tipos de eventos?
 23. Qual a razão para múltiplos "event handlers" do mesmo tipo num mesmo elemento?
+
+## HTTP 
+1. Se o HTTP foi desenhado para hipertexto, isso não dificulta o seu uso por aplicações?
+2. De que forma o ciclo pedido-resposta condiciona o desenvolvimento de aplicações?
+3. Porque razão HTTP é "stateless" se o estado é necessário às aplicações web?
+4. Se o HTTP é um protocolo de texto, como enviados ficheiros multimédia?

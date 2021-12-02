@@ -84,3 +84,9 @@
 2. De que forma o ciclo pedido-resposta condiciona o desenvolvimento de aplicações?
 3. Porque razão HTTP é "stateless" se o estado é necessário às aplicações web?
 4. Se o HTTP é um protocolo de texto, como enviados ficheiros multimédia?
+5. Os cabeçalhos são iguais nos pedidos e respostas?
+6. Qual é a diferença entre dados e recursos?
+7. Porque razão há diferentes formatos de codificações de dados?
+8. Podem ser usados outros formatos de dados?
+9. Como são atribuídos os tipos Internet aos recursos?
+10. Os navegadores podem mostrar todos os tipos Internet?
